@@ -25,7 +25,7 @@
 
 | # | Компонент | Ур. | Состоит из | Используется в | Статус | Ветка | Кто | Обновлено | Заметки |
 |---|---|---|---|---|---|---|---|---|---|
-| 1 | Button <!-- key:page:0:1 --> | 0 | — | DataGrid, Chat, HtmlEditor, Calendar, Lookup, ButtonGroup, FileUploader, Popup, ActionSheet, Scheduler (in progress) | ⬜ не начат |  |  |  |  |
+| 1 | Button <!-- key:page:0:1 --> | 0 | — | DataGrid, Chat, HtmlEditor, Calendar, Lookup, ButtonGroup, FileUploader, Popup, ActionSheet, Scheduler (in progress) | 🟦 в работе | [ветка](https://www.figma.com/design/DpK8J5xUCl7Gc70DKC4I1K/branch/cr0GOmHQkrzG5hWtatoOYZ/DevExtreme-UI-Kit--AI-Generated-) | Ekaterina Pochinshchikova | 2026-10-08 |  |
 | 2 | .Label <!-- key:set:73:3240 --> | 0 | — | ColorBox, DateBox, NumberBox, TextArea, TextBox, Autocomplete, DropDownBox, SelectBox, TagBox | ⬜ не начат |  |  |  |  |
 | 3 | .DropDownButton <!-- key:set:76:4437 --> | 0 | — | ColorBox, TagBox, .TextEditor | ⬜ не начат |  |  |  |  |
 | 4 | CheckBox <!-- key:page:77:4807 --> | 0 | — | DataGrid, List, TreeView | ⬜ не начат |  |  |  |  |
