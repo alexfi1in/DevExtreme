@@ -15,3 +15,4 @@
 
 | # | Компонент | Где в Figma | В коде темы | Взяли в Figma | Предложение разработчикам | Статус | Итог | Ветка | Кто | Дата |
 |---|---|---|---|---|---|---|---|---|---|---|
+| 1 | Button <!-- key:button~button/content-padding --> | button/content-padding | `--dx-button-content-padding: calc((var(--dxds-spacing-320) - var(--dxds-spacing-200) - var(--dxds-border-width-10) * 2) / 2)` (.dx-button .dx-button-content, padding) | `spacing/50` (5px) default, `spacing/30` (3px) compact | выразить через ступени var(--dxds-spacing-50) / var(--dxds-spacing-30) вместо calc | 🔸 открыто |  | [ветка](https://www.figma.com/design/DpK8J5xUCl7Gc70DKC4I1K/branch/cr0GOmHQkrzG5hWtatoOYZ/DevExtreme-UI-Kit--AI-Generated-) | Ekaterina Pochinshchikova | 2026-10-08 |
