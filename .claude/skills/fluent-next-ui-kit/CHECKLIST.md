@@ -64,7 +64,7 @@
 | 37 | FileUploader <!-- key:page:358:472 --> | 1 | Button | — | ⬜ не начат |  |  |  |  |
 | 38 | Load Panel <!-- key:page:261:2 --> | 1 | Load Indicator | — | ⬜ не начат |  |  |  |  |
 | 39 | RadioGroup <!-- key:page:77:4925 --> | 1 | RadioButton | — | ⬜ не начат |  |  |  |  |
-| 40 | Tab Panel <!-- key:page:198:3510 --> | 1 | .Badge | — | ⬜ не начат |  |  |  |  |
+| 40 | Tab Panel <!-- key:page:198:3510 --> | 1 | .Badge | — | ⬜ не начат |  |  | 2026-10-14 | TODO от .Badge: min-width 20 у бейджа во вкладке задаёт контейнер Tabs — учесть при сборке |
 | 41 | TagBox <!-- key:page:304:2 --> | 1 | .Label, .Tag, .DropDownButton | — | ⬜ не начат |  |  |  |  |
 | 42 | TextArea <!-- key:page:80:2022 --> | 1 | .Label | — | ⬜ не начат |  |  |  |  |
 | 43 | TextBox <!-- key:page:73:3034 --> | 2 | .Label, .TextEditor | DataGrid, Lookup, TreeView | ⬜ не начат |  |  |  |  |
