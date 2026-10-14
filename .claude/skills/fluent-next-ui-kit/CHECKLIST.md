@@ -19,7 +19,7 @@
 - **Ручные правки — только в колонках «Статус», «Ветка», «Кто», «Обновлено» и «Заметки».** Остальное
   перестраивается из графа компонентов (`scripts/figma/component-graph.js` → `checklist.mjs build`).
 
-Граф собран из файла «test» (`MN7l3fH5MvyJ0FtkqlY6xL`) 2026-10-08.
+Граф собран из файла «DevExtreme UI Kit (AI Generated)» (`DpK8J5xUCl7Gc70DKC4I1K`) 2026-10-14.
 
 ## Компоненты кита
 
