@@ -87,6 +87,9 @@ for (const s of states) { if (s) el.classList.add(s); out[s || 'rest'] = walk(el
 out;
 ```
 
+- **Сначала отключи анимации.** У многих виджетов (RadioButton, CheckBox) на `border-color` и `transform` стоит
+  `transition`, и сразу после добавления класса `getComputedStyle` возвращает старый цвет. Добавь на страницу
+  `*,*::before,*::after{transition:none!important;animation:none!important}` до форсирования состояний.
 - **Куда ставить класс.** У некоторых виджетов классы состояний живут не на корне: у элементов списков, у
   иконки чекбокса. Смотри селекторы в колонке «read by» таблицы токенов.
 - **Выбор** — классы `dx-item-selected` / `dx-state-selected`, readonly — `dx-state-readonly`.

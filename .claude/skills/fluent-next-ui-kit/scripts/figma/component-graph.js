@@ -1,13 +1,14 @@
 // figma_execute body. Read-only. Builds the component graph of the kit for the checklist
 // (scripts/checklist.mjs build). One item per kit page; every top-level set or component on the
 // "Sub-components" page is an item of its own, because many widgets share them. The Icons page and the
-// pages after the "IN PROGRESS" header go to a separate block.
+// pages after the "IN PROGRESS" header go to a separate block. "Subcomponents" is the new home of rebuilt
+// sub-components: split like "Sub-components" and part of the kit even though it sits after the header.
 //
 // An item depends on another when one of its main components holds an instance of the other's main
 // component directly (not inside a third component's instance). Instances on the page canvas outside the
 // main components (demo frames) are usage examples, not dependencies.
 const EXPECTED_FILE_KEY = '/*@FILE_KEY@*/';
-const SPLIT_PAGES = ['Sub-components'];
+const SPLIT_PAGES = ['Sub-components', 'Subcomponents'];
 const ASSET_PAGES = ['Icons'];
 const IN_PROGRESS_HEADER = /^\W*IN PROGRESS/; // the "🔨 IN PROGRESS..." header page, not "Scheduler (in progress)"
 const SKIP_PAGE = /^(-+|↪︎.*|Thumbnail)$/;
@@ -27,7 +28,7 @@ for (const page of figma.root.children) {
   const mains = page.findAllWithCriteria({ types: ['COMPONENT_SET', 'COMPONENT'] })
     .filter((n) => n.type === 'COMPONENT_SET' || n.parent.type !== 'COMPONENT_SET');
   if (!mains.length) continue;
-  const block = ASSET_PAGES.includes(page.name) ? 'assets' : inProgress ? 'in-progress' : 'kit';
+  const block = ASSET_PAGES.includes(page.name) ? 'assets' : inProgress && !SPLIT_PAGES.includes(page.name) ? 'in-progress' : 'kit';
   if (SPLIT_PAGES.includes(page.name)) {
     for (const m of mains.filter((n) => n.parent === page)) {
       const key = `set:${m.id}`;
