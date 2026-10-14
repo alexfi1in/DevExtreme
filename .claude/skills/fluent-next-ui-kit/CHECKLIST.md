@@ -54,7 +54,7 @@
 | 27 | Switch <!-- key:page:77:4866 --> | 0 | — | — | ⬜ не начат |  |  |  |  |
 | 28 | Toast <!-- key:page:164:4109 --> | 0 | — | — | ⬜ не начат |  |  |  |  |
 | 29 | Tooltip <!-- key:page:164:4196 --> | 0 | — | — | ⬜ не начат |  |  |  |  |
-| 30 | .TextEditor <!-- key:set:73:2488 --> | 1 | .SpinButtons, .DropDownButton | DateBox, NumberBox, TextBox, Autocomplete, DropDownBox, SelectBox, List | ⬜ не начат |  |  | 2026-10-14 | TODO от .DropDownButton: 1) перенести отступ text-editor/spin-button-margin-inline-end из .DropDownButton (paddingRight) на контейнер кнопок поля; 2) .DropDownButton в Surface мастера .TextEditor не принял FILL по высоте (стоит 20, по центру) — растянуть |
+| 30 | .TextEditor <!-- key:set:73:2488 --> | 1 | .SpinButtons, .DropDownButton | DateBox, NumberBox, TextBox, Autocomplete, DropDownBox, SelectBox, List | ⬜ не начат |  |  | 2026-10-14 | TODO от .DropDownButton и .SpinButtons: 1) перенести отступ text-editor/spin-button-margin-inline-end из .DropDownButton (paddingRight) на контейнер кнопок поля; 2) .DropDownButton и .SpinButtons в Surface мастера .TextEditor не приняли FILL по высоте (стоят 20 и 32) — растянуть на высоту поля |
 | 31 | ContextMenu <!-- key:page:186:206 --> | 1 | .Separator | Chat | ⬜ не начат |  |  | 2026-10-14 |  |
 | 32 | Popup <!-- key:page:164:3957 --> | 1 | Button | Scheduler (in progress) | ⬜ не начат |  |  |  |  |
 | 33 | ActionSheet <!-- key:page:149:98 --> | 1 | Button | — | ⬜ не начат |  |  |  |  |
