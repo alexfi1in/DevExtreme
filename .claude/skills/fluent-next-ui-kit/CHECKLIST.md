@@ -68,7 +68,7 @@
 | 41 | TagBox <!-- key:page:304:2 --> | 1 | .Label, .Tag, .DropDownButton | — | ⬜ не начат |  |  |  |  |
 | 42 | TextArea <!-- key:page:80:2022 --> | 1 | .Label | — | ⬜ не начат |  |  |  |  |
 | 43 | TextBox <!-- key:page:73:3034 --> | 2 | .Label, .TextEditor | DataGrid, Lookup, TreeView | ⬜ не начат |  |  |  |  |
-| 44 | List <!-- key:page:237:1466 --> | 2 | .Badge, CheckBox, RadioButton, .Separator, .TextEditor | SelectBox, Lookup | ⬜ не начат |  |  | 2026-10-14 | TODO от .Separator: перепривязать разделитель Select All к list/base-select-all-separator-bg и list/select-all-height (сейчас Foundation напрямую) |
+| 44 | List <!-- key:page:237:1466 --> | 2 | .Badge, CheckBox, RadioButton, .Separator, .TextEditor | SelectBox, Lookup | ⬜ не начат |  |  | 2026-10-14 |  |
 | 45 | Autocomplete <!-- key:page:291:2 --> | 2 | .Label, .TextEditor | — | ⬜ не начат |  |  |  |  |
 | 46 | Chat <!-- key:page:358:5937 --> | 2 | .Informer, Button, SpeechToText, ContextMenu | — | ⬜ не начат |  |  |  |  |
 | 47 | DateBox <!-- key:page:77:4985 --> | 2 | .Label, .TextEditor | — | ⬜ не начат |  |  |  |  |
