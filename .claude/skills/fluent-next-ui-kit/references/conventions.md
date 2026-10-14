@@ -179,7 +179,7 @@ Figma: `.dx-button-content` несёт только отступы и раскл
 | button-text, заливка | `button/<type>-<stylingMode>-content[-state]`; у `disabled` — `button/content-disabled` |
 | button-text, начертание | `button/text-font-weight` |
 | button-text, размер и гарнитура | общие токены `font-size`, `global/font-family` |
-| button-text, интерлиньяж | `button/text-line-height` = `normal` → Auto, не привязывается |
+| button-text, интерлиньяж | `button/text-line-height` → `line-height/base-md` / `base-sm` (в теме `normal`, см. «Решено» 2026-10-14) |
 | button-text, межбуквенный интервал | `button/text-letter-spacing` = `normal` → 0, не привязывается |
 
 Токены `button/padding-*`, `button/icon-size` и `button/icon-margin` тема публикует, но правила их не читают:
