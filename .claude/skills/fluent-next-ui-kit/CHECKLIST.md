@@ -76,7 +76,7 @@
 | 49 | NumberBox <!-- key:page:74:3566 --> | 2 | .Label, .TextEditor | — | ⬜ не начат |  |  |  |  |
 | 50 | SelectBox <!-- key:page:76:4443 --> | 3 | .Label, .TextEditor, List | DataGrid, HtmlEditor | ⬜ не начат |  |  |  |  |
 | 51 | Lookup <!-- key:page:276:18844 --> | 3 | TextBox, List, Button | — | ⬜ не начат |  |  |  |  |
-| 52 | TreeView <!-- key:page:237:13810 --> | 3 | CheckBox, TextBox | — | ⬜ не начат |  |  |  |  |
+| 52 | TreeView <!-- key:page:237:13810 --> | 3 | CheckBox, TextBox | — | ⬜ не начат |  |  | 2026-10-14 | TODO от CheckBox: 15 инстансов CheckBox с фиксированным размером 20×20 (контейнер чекбокса) — привязать к tree-view/checkbox-container-size |
 | 53 | DataGrid <!-- key:page:521:3859 --> | 4 | CheckBox, Bullet, SelectBox, Button, TextBox, Pagination | TreeList | ⬜ не начат |  |  |  |  |
 | 54 | HtmlEditor <!-- key:page:424:2 --> | 4 | Button, SelectBox | — | ⬜ не начат |  |  |  |  |
 | 55 | TreeList <!-- key:page:572:2 --> | 5 | DataGrid, Pagination | — | ⬜ не начат |  |  |  |  |
