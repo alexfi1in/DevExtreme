@@ -10,3 +10,4 @@
 
 | # | Компонент | Где в Figma | Значение | В коде темы | Почему не токен | Что нужно, чтобы убрать | Статус | Итог | Ветка | Кто | Дата |
 |---|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | .SpinButtons <!-- key:.spinbuttons~root_height --> | (root) › height | 32 | `.dx-numberbox-spin-container { height: 100% }` — высота поля (30 у outlined/filled, 32 у underlined) | у высоты нет токена: блок растягивается на высоту поля | растягивать блок по родителю в мастере .TextEditor (сейчас Figma не принимает FILL там) | 🔸 открыто |  | [ветка](https://www.figma.com/design/DpK8J5xUCl7Gc70DKC4I1K/branch/7PYdXhvFOYOqAae8CTlD7V/DevExtreme-UI-Kit--AI-Generated-) | Ekaterina Pochinshchikova | 2026-10-14 |
