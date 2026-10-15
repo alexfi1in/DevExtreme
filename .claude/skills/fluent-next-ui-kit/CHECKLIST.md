@@ -54,7 +54,7 @@
 | 27 | Switch <!-- key:page:77:4866 --> | 0 | — | — | ⬜ не начат |  |  |  |  |
 | 28 | Toast <!-- key:page:164:4109 --> | 0 | — | — | ⬜ не начат |  |  |  |  |
 | 29 | Tooltip <!-- key:page:164:4196 --> | 0 | — | — | ⬜ не начат |  |  |  |  |
-| 30 | .TextEditor <!-- key:set:73:2488 --> | 1 | .SpinButtons, .DropDownButton | DateBox, NumberBox, TextBox, Autocomplete, DropDownBox, SelectBox, List | ⬜ не начат |  |  | 2026-10-14 | TODO: 1) отступ text-editor/spin-button-margin-inline-end перенести из .DropDownButton (paddingRight) на контейнер кнопок поля; 2) .DropDownButton и .SpinButtons в Surface мастера .TextEditor не приняли FILL по высоте (20 и 32) — растянуть на высоту поля |
+| 30 | .TextEditor <!-- key:set:73:2488 --> | 1 | .SpinButtons, .DropDownButton | DateBox, NumberBox, TextBox, Autocomplete, DropDownBox, SelectBox, List | 🟦 в работе | [ветка](https://www.figma.com/design/DpK8J5xUCl7Gc70DKC4I1K/branch/vQbSsMfXgveFFakWhfP4gX/DevExtreme-UI-Kit--AI-Generated-?node-id=68-155) | Ekaterina Pochinshchikova | 2026-10-15 | TODO: 1) отступ text-editor/spin-button-margin-inline-end перенести из .DropDownButton (paddingRight) на контейнер кнопок поля; 2) .DropDownButton и .SpinButtons в Surface мастера .TextEditor не приняли FILL по высоте (20 и 32) — растянуть на высоту поля |
 | 31 | ContextMenu <!-- key:page:186:206 --> | 1 | .Separator | Chat | ⬜ не начат |  |  | 2026-10-14 |  |
 | 32 | Popup <!-- key:page:164:3957 --> | 1 | Button | Scheduler (in progress) | ⬜ не начат |  |  |  |  |
 | 33 | ActionSheet <!-- key:page:149:98 --> | 1 | Button | — | ⬜ не начат |  |  |  |  |
