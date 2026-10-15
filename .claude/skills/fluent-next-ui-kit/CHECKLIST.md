@@ -58,7 +58,7 @@
 | 31 | ContextMenu <!-- key:page:186:206 --> | 1 | .Separator | Chat | ⬜ не начат |  |  | 2026-10-14 |  |
 | 32 | Popup <!-- key:page:164:3957 --> | 1 | Button | Scheduler (in progress) | ⬜ не начат |  |  |  |  |
 | 33 | ActionSheet <!-- key:page:149:98 --> | 1 | Button | — | ⬜ не начат |  |  |  |  |
-| 34 | ButtonGroup <!-- key:page:68:606 --> | 1 | Button | — | 🟨 на ревью | [ветка](https://www.figma.com/design/DpK8J5xUCl7Gc70DKC4I1K/branch/NB3zyQHi3DYmcrba5SLN4F/DevExtreme-UI-Kit--AI-Generated-?node-id=68-606) | Ekaterina Pochinshchikova | 2026-10-15 | 3 токена button-group (separator, item-contained-border-inline-end-width, text-column-gap); stylingMode×state, 4 exposed-инстанса Button с переопределениями по позиции; открыто: тень contained в rest не видна (как у Button) — Figma строит тень по непрозрачным пикселям, а фон прозрачный |
+| 34 | ButtonGroup <!-- key:page:68:606 --> | 1 | Button | — | ✅ смёржен | [ветка](https://www.figma.com/design/DpK8J5xUCl7Gc70DKC4I1K/branch/NB3zyQHi3DYmcrba5SLN4F/DevExtreme-UI-Kit--AI-Generated-?node-id=68-606) | Ekaterina Pochinshchikova | 2026-10-15 | 3 токена button-group (separator, item-contained-border-inline-end-width, text-column-gap); stylingMode×state, 4 exposed-инстанса Button с переопределениями по позиции; открыто: тень contained в rest не видна (как у Button) — Figma строит тень по непрозрачным пикселям, а фон прозрачный |
 | 35 | Calendar <!-- key:page:164:4262 --> | 1 | Button | — | ⬜ не начат |  |  |  |  |
 | 36 | ColorBox <!-- key:page:82:3343 --> | 1 | .Label, .DropDownButton | — | ⬜ не начат |  |  |  |  |
 | 37 | FileUploader <!-- key:page:358:472 --> | 1 | Button | — | ⬜ не начат |  |  |  |  |
