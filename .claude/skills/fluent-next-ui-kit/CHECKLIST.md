@@ -42,7 +42,7 @@
 | 15 | SpeechToText <!-- key:page:71:475 --> | 0 | — | Chat | ✅ смёржен | [ветка](https://www.figma.com/design/DpK8J5xUCl7Gc70DKC4I1K/branch/euT9xHvhYU2HOvAw9FqgYP/DevExtreme-UI-Kit--AI-Generated-?node-id=71-475) | Ekaterina Pochinshchikova | 2026-10-15 | без своих токенов (корень — dx-button); 2 варианта isListening=false/true (micfilled/stopfilled) с exposed-инстансом Button; swap-свойства Start/Stop Icon удалены; Chat: на вложенном Button stylingMode=text и micoutline в мастере .ChatMessageBox, 9 копий подтянулись |
 | 16 | Accordion <!-- key:page:136:1514 --> | 0 | — | — | ⬜ не начат |  |  |  |  |
 | 17 | DateRangeBox <!-- key:page:324:2 --> | 0 | — | — | ⬜ не начат |  |  |  |  |
-| 18 | FloatingActionButton <!-- key:page:72:558 --> | 0 | — | — | ⬜ не начат |  |  |  |  |
+| 18 | FloatingActionButton <!-- key:page:72:558 --> | 0 | — | — | 🟦 в работе | [ветка](https://www.figma.com/design/DpK8J5xUCl7Gc70DKC4I1K/branch/FOcJ2if772PnLa1AiHLc90/DevExtreme-UI-Kit--AI-Generated-?node-id=72-558) | Ekaterina Pochinshchikova | 2026-10-15 |  |
 | 19 | Gallery <!-- key:page:368:2528 --> | 0 | — | — | ⬜ не начат |  |  |  |  |
 | 20 | Menu <!-- key:page:197:1938 --> | 0 | — | — | ⬜ не начат |  |  |  |  |
 | 21 | Popover <!-- key:page:164:2091 --> | 0 | — | — | ⬜ не начат |  |  |  |  |
