@@ -70,7 +70,7 @@
 | 43 | TextBox <!-- key:page:73:3034 --> | 2 | .Label, .TextEditor | DataGrid, Lookup, TreeView | ⬜ не начат |  |  |  |  |
 | 44 | List <!-- key:page:237:1466 --> | 2 | .Badge, CheckBox, RadioButton, .Separator, .TextEditor | SelectBox, Lookup | ⬜ не начат |  |  | 2026-10-14 |  |
 | 45 | Autocomplete <!-- key:page:291:2 --> | 2 | .Label, .TextEditor | — | ⬜ не начат |  |  |  |  |
-| 46 | Chat <!-- key:page:358:5937 --> | 2 | .Informer, Button, SpeechToText, ContextMenu | — | ⬜ не начат |  |  |  |  |
+| 46 | Chat <!-- key:page:358:5937 --> | 2 | .Informer, Button, SpeechToText, ContextMenu | — | ⬜ не начат |  |  | 2026-10-15 | TODO от .Informer: у алертов Chat (.dx-chat-alertlist) padding-block 6 вместо 8 — переопределение Chat, учесть при сборке |
 | 47 | DateBox <!-- key:page:77:4985 --> | 2 | .Label, .TextEditor | — | ⬜ не начат |  |  |  |  |
 | 48 | DropDownBox <!-- key:page:453:26956 --> | 2 | .Label, .TextEditor | — | ⬜ не начат |  |  |  |  |
 | 49 | NumberBox <!-- key:page:74:3566 --> | 2 | .Label, .TextEditor | — | ⬜ не начат |  |  |  |  |
