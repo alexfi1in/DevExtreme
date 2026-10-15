@@ -244,6 +244,8 @@ const tok = (name) => { const v = byName.get(name); if (!v) throw new Error(`no 
   заливкой корня, но в коде её нет. Решено оставить как в коде и пометить в чек-листе как открытый вопрос.
   У групп (DropDownButton split, ButtonGroup) в hovered, focused и active тень обводит только кнопку с фоном, а
   не всю группу, как в браузере. Это то же ограничение, и тоже записывается в чек-лист как открытый вопрос.
+  Так же у FloatingActionButton: у кнопки действия и её подписи фон в rest прозрачный (`speed-dial-action/bg` →
+  `color/bg-alpha`), поэтому тени нет.
 
 Что выяснилось на `.Label` (2026-10-14):
 
