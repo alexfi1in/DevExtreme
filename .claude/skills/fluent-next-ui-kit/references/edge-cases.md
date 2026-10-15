@@ -119,6 +119,15 @@
 **Признак:** флаг `missing-in-css`. Пересобери бандл (`pnpm run demos:prepare`). Если токена всё равно нет,
 значит он мёртвый: пропусти и напиши в отчёте.
 
+### Виджет визуализации (viz): цвета в JS-теме
+**Признак:** `component-tokens.mjs <widget>` отвечает `unknown widget`. Это Bullet, Sparkline, Chart и другие
+виджеты из `js/__internal/viz`. Их стили живут не в SCSS, а в `viz/core/themes/fluent-next/index.ts`, в секции
+виджета: `bullet: { color: paint(VIZ_BLUE), … }`. `paint()` даёт `var(--dx-viz-*)`. Токены кита — эти
+`viz/*`. Одни лежат в спеке `viz`, другие (`viz/content`, `viz/bg`, …) — в спеке `common`. Собери нужные в
+одну спеку и запусти upsert. Размеры (`targetWidth`, отступы, доли высоты) — опции и константы JS, CSS-токенов
+у них нет. Оставь их числами и сделай информационную запись в HARDCODED. Геометрию снимай в демке с
+`getBoundingClientRect` путей SVG: `sharp()` сдвигает линии толщиной 1 на 0,5px.
+
 ## Компонент
 
 ### Опция API не ложится на свойство однозначно
