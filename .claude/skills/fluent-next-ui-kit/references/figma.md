@@ -193,6 +193,20 @@ const tok = (name) => { const v = byName.get(name); if (!v) throw new Error(`no 
   // затем перепривяжи то, что отличается в этом состоянии
   ```
 
+  **Обязательно верни клону связи со свойствами** (`componentPropertyReferences`, см. ниже) и в конце сверь все
+  варианты с образцом по путям слоёв:
+
+  ```js
+  const path = (n, root) => { const p = []; for (let q = n; q && q !== root; q = q.parent) p.unshift(q.name); return p.join('/'); };
+  const refsOf = (v) => new Map(v.findAll((x) => x.componentPropertyReferences && Object.keys(x.componentPropertyReferences).length)
+    .map((x) => [path(x, v), x.componentPropertyReferences]));
+  const ref = refsOf(template); // собранный вариант с той же структурой
+  for (const v of set.children) for (const [p, r] of ref) {
+    const n = v.findOne((x) => path(x, v) === p);
+    if (n && JSON.stringify(n.componentPropertyReferences || {}) !== JSON.stringify(r)) n.componentPropertyReferences = r;
+  }
+  ```
+
 - **Удаление варианта** — только после переноса его инстансов:
 
   ```js
@@ -209,7 +223,12 @@ const tok = (name) => { const v = byName.get(name); if (!v) throw new Error(`no 
 Что выяснилось на живых прогонах (CheckBox, 2026-10-08):
 
 - **`clone()` варианта теряет связи слоёв со свойствами.** Пропадают `componentPropertyReferences`
-  (видимость ↔ boolean, текст ↔ TEXT). После клонирования назначь их заново.
+  (видимость ↔ boolean, текст ↔ TEXT). После клонирования назначь их заново. **2026-10-15:** это пропустили на
+  DropDownButton (216 клонов из 240 без `icon`/`hasIcon`/`text`/`showArrowIcon`), Accordion (2 варианта focused) и
+  `.TextEditor` (12 вариантов invalid без clear, стрелки, спин-кнопок, placeholder и значения). Ошибку не видно
+  на скриншоте набора, потому что у мастера скрытые слои и так скрыты. Нашла её дизайнер, включив свойства на
+  инстансе. Исправлено сверкой по образцу (рецепт выше) в ветке `.TextEditor`. Сверка привязок — обязательный
+  шаг проверки любого набора, где были клоны.
 - **Порядок значений варианта хранится явно.** Переименованное значение остаётся на своём месте, новое
   добавляется в конец. Переставить можно «переносом в конец»: переименовывай варианты по одному во временное
   значение и обратно, перечитывая `componentPropertyDefinitions` между шагами. Порядок самих свойств в панели
