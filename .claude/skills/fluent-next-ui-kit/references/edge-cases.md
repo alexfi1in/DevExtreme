@@ -292,3 +292,10 @@
   отступом `custom-button-margin`. В ките это `hasBeforeButton` / `hasAfterButton` с exposed-инстансом Button.
 - **2026-10-15 — `.Label` в `.TextEditor` не встраиваем, пока не собраны владельцы.** Подпись ставит владелец
   (TextBox, DateBox, …), как и раньше. Встроить её с осью `labelMode` — отдельная задача при сборке владельцев.
+- **2026-10-15 — `labelMode` в `.TextEditor`.** Ось `labelMode=hidden|static|floating|outside`, по умолчанию
+  `hidden` (у владельцев своя подпись, пока их не пересобрали). Подпись — вложенный exposed-инстанс `.Label`, его
+  `labelMode`, `stylingMode`, `state` и `validationStatus` задаёт вариант. `floating` в ките — подпись на месте
+  placeholder; в `focused` она наверху, как в коде. «floating со значением» выглядит как `static`, для него берут
+  `static`. Корень варианта — прозрачная вертикальная обёртка: в ней `label-outside` (в потоке) для outside и
+  поле `texteditor`; подписи static/floating — абсолютный контейнер `label` с отступом слева на токене поля.
+  У outlined «окно» в рамке закрывается фоном `text-editor/outlined-bg` у `.Label`.
