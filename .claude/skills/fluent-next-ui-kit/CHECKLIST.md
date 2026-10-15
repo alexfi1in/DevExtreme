@@ -36,7 +36,7 @@
 | 9 | .Tag <!-- key:set:276:17674 --> | 0 | — | TagBox | ✅ смёржен | [ветка](https://www.figma.com/design/DpK8J5xUCl7Gc70DKC4I1K/branch/Ljinl3IPJtItIHqFg5GxcP/DevExtreme-UI-Kit--AI-Generated-) | Ekaterina Pochinshchikova | 2026-10-14 | 19 токенов tag-box (тег) + tag-remove-button-icon-size; state rest/hovered/focused/disabled, text, hasRemoveButton; кнопка удаления в потоке (резерв padding-inline-end), иконка close; Utils перегенерировать |
 | 10 | .SpinButtons <!-- key:set:75:3984 --> | 0 | — | .TextEditor | ✅ смёржен | [ветка](https://www.figma.com/design/DpK8J5xUCl7Gc70DKC4I1K/branch/7PYdXhvFOYOqAae8CTlD7V/DevExtreme-UI-Kit--AI-Generated-) | Ekaterina Pochinshchikova | 2026-10-14 |  |
 | 11 | Load Indicator <!-- key:page:244:4 --> | 0 | — | Load Panel | ✅ смёржен | [ветка](https://www.figma.com/design/DpK8J5xUCl7Gc70DKC4I1K/branch/SzjU4F6XGEdJ2j0W9WeHfK/DevExtreme-UI-Kit--AI-Generated-) | Ekaterina Pochinshchikova | 2026-10-15 | 9 токенов темы + sparkle-large/medium/small-bg; animationType×state (circle rest/disabled, sparkle); толщина 4; визуал дизайна: дуга 3/4, звёзды 12/8/4; вопрос: звёзды в тёмной теме; Utils перегенерировать |
-| 12 | .Informer <!-- key:set:358:8599 --> | 0 | — | Chat | ⬜ не начат |  |  |  |  |
+| 12 | .Informer <!-- key:set:358:8599 --> | 0 | — | Chat | 🟦 в работе | [ветка](https://www.figma.com/design/DpK8J5xUCl7Gc70DKC4I1K/branch/Nk0CtJrQcNh4xIxWnd3t22/DevExtreme-UI-Kit--AI-Generated-) | Ekaterina Pochinshchikova | 2026-10-15 |  |
 | 13 | Bullet <!-- key:page:541:2 --> | 0 | — | DataGrid | ⬜ не начат |  |  |  |  |
 | 14 | DropDownButton <!-- key:page:69:1499 --> | 0 | — | Scheduler (in progress) | ⬜ не начат |  |  |  |  |
 | 15 | SpeechToText <!-- key:page:71:475 --> | 0 | — | Chat | ⬜ не начат |  |  |  |  |
