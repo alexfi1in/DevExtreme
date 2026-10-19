@@ -450,6 +450,8 @@ const tok = (name) => { const v = byName.get(name); if (!v) throw new Error(`no 
   `await`, складывая результат в `globalThis`. Токены, которым нужен импорт, создай с временными значениями из
   демки и пометь `setSharedPluginData`. Когда импорт придёт, замени значения на алиасы: привязки в компонентах
   от этого не меняются. Списки `getVariablesInLibraryCollectionAsync` при этом отвечают быстро (~0.2 с).
+  Если импорт висит дольше пары минут и повторный вызов тоже висит (Popover, 2026-10-19), попроси
+  перезапустить Desktop Bridge: после перезапуска `importVariableByKeyAsync` вернулся сразу.
 - **Значение «токен с прозрачностью»** (`rgb(from var(--dxds-…) r g b / 0.8)`) записывается как
   `{color: {type:'VARIABLE_ALIAS', id}, opacity: 80}`, и связь с Foundation сохраняется.
 Что выяснилось на Menu (2026-10-19):

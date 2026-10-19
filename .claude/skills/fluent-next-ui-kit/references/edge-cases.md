@@ -249,6 +249,9 @@
 - **2026-10-19 — токены чужих виджетов** (`typography/m-font-size`, `toolbar/label-font-weight`), на которые
   ссылается компонент, создаются в его ветке и записываются в DEV-HANDOFF. Ветки этих виджетов их
   переиспользуют.
+- **2026-10-19 — Popover во Fluent Next без видимой стрелки** (фона у `.dx-popover-arrow::after` нет, он есть
+  только у Tooltip и Lookup). Стрелка и ось `position` убраны, Popover — один компонент на основе
+  `.Popup Title` / `.Popup Bottom` и стиля окна Popup → DEV-HANDOFF. Tooltip и Lookup рисуют стрелку сами.
 - **2026-10-19 — `shading` у Popup: по умолчанию `false`**, хотя в API `true`. Иначе главный вариант —
   затемнённая рамка. Затемнение — общий `backdrop/bg`, а `popup/dialog-backdrop` относится только к Dialog.
 - **2026-10-19 — токен «unread», потому что правило читает SCSS-переменную** с тем же значением
