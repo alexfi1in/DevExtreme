@@ -17,6 +17,8 @@
 | Поле привязано к переменной Foundation напрямую, потому что токена компонента нет (`font-weight/base-default` у текста) | DEV-HANDOFF |
 | Применён стиль эффекта Foundation (`shadow/xs` вместо `--dx-…-box-shadow`) или поля эффекта привязаны к `box-shadow/layer-*` | DEV-HANDOFF |
 | У `--dxds-*` нет пары в Figma, взяли ближайшую переменную Foundation | DEV-HANDOFF |
+| Создан токен кита, которого нет в теме (`text-editor/with-label-margin-block-start`) | DEV-HANDOFF |
+| Компонентный токен привязан к полю не в той роли, что в CSS: `bottom`/`left` абсолютного элемента → `padding` контейнера, толщина рамки → сдвиг подписи на 1px, токен другого виджета (`label-backdrop-height` от DateRangeBox) | DEV-HANDOFF |
 | В переменной сырое значение (`"value": …` в спецификации) | HARDCODED |
 | Поле оставлено без привязки по решению, и аудит показывает его непривязанным (начертание Regular без токена, отступ числом) | HARDCODED |
 | Значение выставлено вручную, потому что в Figma для него нет поля-переменной (например, `text-transform: uppercase` → регистр текста) | HARDCODED |
