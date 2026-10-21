@@ -516,6 +516,18 @@ const tok = (name) => { const v = byName.get(name); if (!v) throw new Error(`no 
   `layoutSizingVertical` читается как `FIXED`, хотя он растягивается. Проверь `layoutAlign`, прежде чем
   «чинить».
 
+Что выяснилось на ActionSheet (2026-10-21):
+
+- **Виджет поверх Popup собирай из частей Popup, а не рисуй заново.** Заголовок — инстанс `.Popup Title`
+  (`showCloseButton=false`, exposed, `visible` → `showTitle`), корень берёт `fills`/`effects` у варианта
+  `Popup › shading=false` присваиванием массивов: привязки к `surface/overlay` и `box-shadow/layer-*-2xl`
+  переезжают вместе с ними. Отдельное TEXT-свойство заголовка тогда не нужно — удали его.
+- **Слот переименовывается вместе со свойством.** Имя слоя из DOM (`actionsheet-container`) и имя свойства из
+  API (`items`) не уживаются: `node.name = …` переименовало свойство, `editComponentProperty` — слой. Бери имя
+  опции API, как `content` у Popup.
+- **`margin` последнего элемента через `:not(:last-child)` — это `itemSpacing`**, а `margin-top` следующего
+  блока — `itemSpacing` родителя. Оба места — DEV-HANDOFF (токен в роли gap).
+
 ## Превью для сверки с демкой
 
 Собери временную секцию на странице компонента. Вне набора, сбоку или ниже, не перекрывая существующее:
