@@ -258,8 +258,9 @@
   `.dx-slider-handle`): `state=rest|hovered|focused|disabled` × `validationStatus`. В RangeSlider две выведенные
   наружу ручки, у каждой своё состояние. У самих наборов в `state` остаются только `rest` и `disabled`.
   У Slider `hovered`/`focused` остаются вариантами набора, ручка берёт соответствующий вариант.
-- **2026-10-21 — тултип ручки Slider/RangeSlider** не рисуется, пока не готов Tooltip. Токены `slider/tooltip-*`
-  создаются без привязки.
+- **2026-10-21 — тултип ручки Slider/RangeSlider** — подкомпонент `.Slider Tooltip` (стрелка 14×9, сверху отступ
+  `slider/tooltip-top-padding-block-start`) в `.Slider Handle` по оси `tooltip=hidden|top|bottom`. Ручка в Slider и
+  RangeSlider выведена наружу, тултип включается на ней.
 - **2026-10-19 — унаследованный unitless line-height без токена** (подпись заголовка Popup: 1.4286 × 20 =
   28.57) → токен кита `<префикс>/…-line-height`. Default — ступень Foundation по округлённому значению (28 →
   `line-height/280`), compact — ближайшая **чётная** ступень (21.33 → `line-height/220`). Запись в DEV-HANDOFF.
