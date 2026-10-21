@@ -248,6 +248,8 @@
   ниже. Запись в DEV-HANDOFF.
 - **2026-10-21 — видимость + положение подписей (`label.visible`, `label.position`)** — одна ось
   `labelPosition=hidden|top|bottom`, если видимость меняет отступ корня. По умолчанию `hidden`, как в API.
+- **2026-10-21 — размер из опции API, а не из темы** (толщина Splitter = `separatorSize`, 8): остаётся размером
+  компонента, но всё равно записывается в HARDCODED с именем опции, чтобы было видно, откуда число.
 - **2026-10-21 — ручка Slider и RangeSlider — общий подкомпонент `.Slider Handle`** (как в коде один
   `.dx-slider-handle`): `state=rest|hovered|focused|disabled` × `validationStatus`. В RangeSlider две выведенные
   наружу ручки, у каждой своё состояние. У самих наборов в `state` остаются только `rest` и `disabled`.
