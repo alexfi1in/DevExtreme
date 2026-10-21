@@ -248,6 +248,10 @@
   ниже. Запись в DEV-HANDOFF.
 - **2026-10-21 — видимость + положение подписей (`label.visible`, `label.position`)** — одна ось
   `labelPosition=hidden|top|bottom`, если видимость меняет отступ корня. По умолчанию `hidden`, как в API.
+- **2026-10-21 — ручка Slider и RangeSlider — общий подкомпонент `.Slider Handle`** (как в коде один
+  `.dx-slider-handle`): `state=rest|hovered|focused|disabled` × `validationStatus`. В RangeSlider две выведенные
+  наружу ручки, у каждой своё состояние. У самих наборов в `state` остаются только `rest` и `disabled`.
+  У Slider `hovered`/`focused` остаются вариантами набора, ручка берёт соответствующий вариант.
 - **2026-10-21 — тултип ручки Slider/RangeSlider** не рисуется, пока не готов Tooltip. Токены `slider/tooltip-*`
   создаются без привязки.
 - **2026-10-19 — унаследованный unitless line-height без токена** (подпись заголовка Popup: 1.4286 × 20 =
