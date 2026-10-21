@@ -451,7 +451,12 @@ const tok = (name) => { const v = byName.get(name); if (!v) throw new Error(`no 
   демки и пометь `setSharedPluginData`. Когда импорт придёт, замени значения на алиасы: привязки в компонентах
   от этого не меняются. Списки `getVariablesInLibraryCollectionAsync` при этом отвечают быстро (~0.2 с).
   Если импорт висит дольше пары минут и повторный вызов тоже висит (Popover, 2026-10-19), попроси
-  перезапустить Desktop Bridge: после перезапуска `importVariableByKeyAsync` вернулся сразу.
+  перезапустить Desktop Bridge: после перезапуска `importVariableByKeyAsync` вернулся сразу. На Progress Bar
+  импорт без перезапуска пришёл сам примерно через 2 минуты: пока ждёшь, делай сверку и журналы, а не
+  повторные вызовы.
+- **Градиент с переменными:** у `GRADIENT_LINEAR` привязывай каждую точку
+  (`boundVariables: {color: figma.variables.createVariableAlias(v)}`), а `color` точки бери из
+  `resolveForConsumer`. CSS `background-size: 90%` передаётся `gradientTransform: [[1/0.9,0,0],[0,1,0]]`.
 - **Значение «токен с прозрачностью»** (`rgb(from var(--dxds-…) r g b / 0.8)`) записывается как
   `{color: {type:'VARIABLE_ALIAS', id}, opacity: 80}`, и связь с Foundation сохраняется.
 Что выяснилось на Menu (2026-10-19):
