@@ -254,6 +254,12 @@
   footer-button-height`) → опция, меняющая сумму, — вариант (`showTodayButton`), высота варианта —
   токен кита с готовой суммой (`calendar/with-footer-height`, сырое) → HARDCODED и DEV-HANDOFF. Слагаемое,
   которое больше нигде не читается, создаётся без привязки.
+- **2026-10-26 — все режимы API, которые меняют вид, рисуются** (FileUploader: `uploadMode=useForm`,
+  `isValid=false`). «Не рисуем» — только для RTL и анимации; режим, похожий на другой, всё равно отдельное
+  значение оси, если в DOM есть отличия.
+- **2026-10-26 — валидация редактора = ось `validationStatus` + общий `.Validation Message`** (токены
+  `validation/*`, страница Subcomponents) под корнем. Компоненты, собранные раньше с одной красной рамкой
+  (Calendar), нужно дополнить сообщением.
 - **2026-10-26 — `50%` / `999em` у радиуса** → `border-radius/full` → DEV-HANDOFF.
 - **2026-10-26 — Calendar: подкомпоненты только для повторяющихся ячеек** (`.Calendar Cell`,
   `.Calendar Period Cell`, `.Calendar Week Number Cell`). Navigator, заголовок дней и футер — слои
