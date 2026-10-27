@@ -73,7 +73,7 @@
 | 46 | DateRangeBox <!-- key:page:324:2 --> | 0 | — | — | ⬜ не начат |  |  |  |  |
 | 47 | ColorBox <!-- key:page:82:3343 --> | 1 | .Label, .DropDownButton | — | ⬜ не начат |  |  |  |  |
 <<<<<<< Updated upstream
-| 48 | DropDownBox <!-- key:page:453:26956 --> | 2 | .Label, .TextEditor | — | 🟦 в работе | [ветка](https://www.figma.com/design/DpK8J5xUCl7Gc70DKC4I1K/branch/F8H15PnU5PFKyJ6O9ZPwm5/DevExtreme-UI-Kit--AI-Generated-?node-id=453-26956) | Ekaterina Pochinshchikova | 2026-10-27 |  |
+| 48 | DropDownBox <!-- key:page:453:26956 --> | 2 | .Label, .TextEditor | — | 🟨 на ревью | [ветка](https://www.figma.com/design/DpK8J5xUCl7Gc70DKC4I1K/branch/F8H15PnU5PFKyJ6O9ZPwm5/DevExtreme-UI-Kit--AI-Generated-?node-id=453-26956) | Ekaterina Pochinshchikova | 2026-10-27 | по образцу NumberBox: exposed .TextEditor (showDropDownButton=true, Item 1); общие подкомпоненты на Subcomponents: .DropDown Overlay (Popup + List, 240×140) и .DropDownList Popup (Popup + .List Item, 240×108) с тенью lg; токены global/dropdown-* (без привязки), drop-down-editor/* (list-font-size / line-height, invalid-badge-* из calc); SelectBox / Dropdown List удалён (без инстансов) |
 =======
 | 48 | DropDownBox <!-- key:page:453:26956 --> | 3 | .Label, .TextEditor, Popup, List | — | ⬜ не начат |  |  |  |  |
 >>>>>>> Stashed changes
