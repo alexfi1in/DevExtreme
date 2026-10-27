@@ -412,3 +412,8 @@
   (`disabled`, `treeViewDisabled`), у самого виджета — ось `disabled`, где строки берут `treeViewDisabled`.
 - **2026-10-27 — margin строки (`1px 0`) — padding прозрачной обёртки подкомпонента**, внутри строка с
   фоном. Схлопывание margin в коде (−1px у корня) → DEV-HANDOFF.
+- **2026-10-27 — контейнер с произвольными виджетами (Toolbar).** Элемент — подкомпонент-обёртка
+  `.Toolbar Item` (высота `toolbar/height`, слот `content`), секции before / center / after — слоты из
+  таких обёрток. Center по центру через равные FILL-секции before / after. `multiline` — ось: один слот
+  с переносом вместо секций. Открытое меню переполнения — отдельный компонент `.Toolbar Menu`, в Toolbar
+  только кнопка (`showMenu`). `.Popup Title` / `.Popup Bottom` переводятся на Toolbar отдельной задачей.
