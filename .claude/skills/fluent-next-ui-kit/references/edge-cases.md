@@ -401,3 +401,9 @@
   `static`. Корень варианта — прозрачная вертикальная обёртка: в ней `label-outside` (в потоке) для outside и
   поле `texteditor`; подписи static/floating — абсолютный контейнер `label` с отступом слева на токене поля.
   У outlined «окно» в рамке закрывается фоном `text-editor/outlined-bg` у `.Label`.
+- **2026-10-27 — коллекция с группами (List).** Подкомпоненты `.List Item`, `.List Group Header`
+  (`expanded` + boolean `collapsible` на индикаторе), `.List Group` (заголовок + слот `items` + нижняя граница
+  на boolean `showSeparator`: у последней группы её нет), `.List Select All`, `.List Context Menu`. У `List`
+  ось `content=items|grouped|empty` × `showSelectAll`: обе меняют отступ сверху у слота (4px есть только у
+  плоского списка без Select All). `searchEnabled`, `showNextButton`, `showBorder` — boolean; рамка — абсолютный
+  слой поверх (stroke корня boolean не включает) → DEV-HANDOFF.

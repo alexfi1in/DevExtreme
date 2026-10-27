@@ -632,6 +632,18 @@ const tok = (name) => { const v = byName.get(name); if (!v) throw new Error(`no 
 - **Перевод инстансов со старых вариантов:** `swapComponent` на новый вариант, затем свойства вложенного
   инстанса из снимка (placeholder, value, state, labelMode), затем ширина. Старые варианты удаляй, только когда
   на них не осталось инстансов.
+- **Слот: имя слоя и имя свойства связаны** (List): `editComponentProperty(slotKey, {name})` переименует и
+  слой-слот, а переименование слоя — свойство. Называй слот по свойству (`items`), а не по DOM-классу.
+  `combineAsVariants` вариантов, где у каждого слот с одним именем, сам сводит их в одно свойство.
+- **Ищи слой в мастере по пути, а не `findOne` по имени** (List): `findOne(n => n.name === 'text')` находит
+  первым `text` внутри вложенного инстанса (CheckBox), и `componentPropertyReferences` падает с «instance
+  sublayer». Бери `frame.children[0]` или фильтруй по `n.parent`.
+- **Прозрачная граница, которая влияет на высоту** (List Group Header: `border-top: 1px transparent`):
+  stroke `color/none`, `strokeTopWeight` с привязкой, остальные 0, `strokesIncludedInLayout = true`.
+- **Base-SCSS в `em`** (List: `min-height: 3em`, кнопка `padding: 0 3em`) — проверяй base, не только fluent:
+  такие правила дают «необъяснимые» 42 / 182 в демке. Заводи kit-only токен с описанием формулы.
+- **`swapComponent` инстансов внутри мастеров владельцев идёт медленно** (List: ~5 с на инстанс в SelectBox /
+  Lookup) — запускай фоновым циклом с прогрессом в `globalThis` и жди через `run_in_background`.
 
 ## Превью для сверки с демкой
 
