@@ -63,23 +63,24 @@
 | 36 | List <!-- key:page:237:1466 --> | 2 | .Badge, CheckBox, RadioButton, .Separator, .TextEditor | SelectBox, Lookup | ✅ смёржен | [ветка](https://www.figma.com/design/DpK8J5xUCl7Gc70DKC4I1K/branch/yMLH2TgzlGPtvltPoDZbgy/DevExtreme-UI-Kit--AI-Generated-?node-id=237-1466) | Ekaterina Pochinshchikova | 2026-10-27 | .List Item (30 вар.), .List Group Header, .List Group, .List Select All, .List Context Menu, List (content × showSelectAll + search/nextButton/border); 44 инстанса владельцев переведены |
 | 37 | Chat <!-- key:page:358:5937 --> | 2 | .Informer, Button, SpeechToText, ContextMenu | — | ⬜ не начат |  |  | 2026-10-15 | TODO от .Informer: у алертов Chat (.dx-chat-alertlist) padding-block 6 вместо 8 — переопределение Chat, учесть при сборке |
 | 38 | TreeView <!-- key:page:237:13810 --> | 3 | CheckBox, Load Indicator, TextBox | — | ✅ смёржен | [ветка](https://www.figma.com/design/DpK8J5xUCl7Gc70DKC4I1K/branch/myaZn4qmZv7p87e1HHNlVN/DevExtreme-UI-Kit--AI-Generated-?node-id=237-13810) | Ekaterina Pochinshchikova | 2026-10-27 | 32 токена (5 kit-only); .TreeView Item 40 вар. (state×selected×selectionControl×expanded; hasItems/isLoading/hasIcon), .TreeView Select All (disabled), .TreeView Level, TreeView (showCheckBoxesMode×disabled, searchEnabled); TODO CheckBox 20×20 закрыт (tree-view/checkbox-container-size); Load Indicator — зависимость |
-| 39 | .TextEditor <!-- key:set:73:2488 --> | 1 | .SpinButtons, .DropDownButton | DateBox, NumberBox, TextBox, Autocomplete, DropDownBox, SelectBox, List | ✅ смёржен | [ветка](https://www.figma.com/design/j2uD3P8hYqeWf0prOE8oXF/fix-texteditor?node-id=2455-22) | Ekaterina Pochinshchikova | 2026-10-26 | fix: search-icon (TextBox), квадрат ColorBox, слот tag-container (TagBox), minHeight; .DropDownButton icon; владельцы без изменений |
-| 40 | TextBox <!-- key:page:73:3034 --> | 2 | .Label, .TextEditor | DataGrid, Lookup, TreeView | ✅ смёржен | [ветка](https://www.figma.com/design/DpK8J5xUCl7Gc70DKC4I1K/branch/I8ki9LF7yC0eipwliM70BA/DevExtreme-UI-Kit--AI-Generated-?node-id=73-3034) | Ekaterina Pochinshchikova | 2026-10-26 | mode=text/search/password поверх exposed .TextEditor; search: иконка, отступ, сдвиг подписи (static по умолчанию); 10 инстансов во владельцах на mode=text |
-| 41 | TextArea <!-- key:page:80:2022 --> | 1 | .Label | — | ✅ смёржен | [ветка](https://www.figma.com/design/DpK8J5xUCl7Gc70DKC4I1K/branch/yknDAGuLiKXp0ydETC8lTI/DevExtreme-UI-Kit--AI-Generated-?node-id=80-2022) | Ekaterina Pochinshchikova | 2026-10-27 | autoResizeEnabled=false/true поверх exposed .TextEditor; margin 2 и line-height через переопределения; высота 2 строки — содержимым; инстанс DataGrid переведён |
-| 42 | NumberBox <!-- key:page:74:3566 --> | 2 | .Label, .TextEditor | — | ⬜ не начат |  |  |  |  |
-| 43 | Autocomplete <!-- key:page:291:2 --> | 2 | .Label, .TextEditor | — | ⬜ не начат |  |  |  |  |
-| 44 | DateBox <!-- key:page:77:4985 --> | 2 | .Label, .TextEditor | — | ⬜ не начат |  |  |  |  |
-| 45 | DateRangeBox <!-- key:page:324:2 --> | 0 | — | — | ⬜ не начат |  |  |  |  |
-| 46 | ColorBox <!-- key:page:82:3343 --> | 1 | .Label, .DropDownButton | — | ⬜ не начат |  |  |  |  |
-| 47 | DropDownBox <!-- key:page:453:26956 --> | 2 | .Label, .TextEditor | — | ⬜ не начат |  |  |  |  |
-| 48 | TagBox <!-- key:page:304:2 --> | 1 | .Label, .Tag, .DropDownButton | — | ⬜ не начат |  |  |  |  |
-| 49 | SelectBox <!-- key:page:76:4443 --> | 3 | .Label, .TextEditor, List | DataGrid, HtmlEditor | ⬜ не начат |  |  |  |  |
-| 50 | Lookup <!-- key:page:276:18844 --> | 3 | TextBox, List, Button | — | ⬜ не начат |  |  |  |  |
-| 51 | HtmlEditor <!-- key:page:424:2 --> | 4 | Button, SelectBox | — | ⬜ не начат |  |  |  |  |
-| 52 | Stepper <!-- key:page:204:4395 --> | 0 | — | — | ⬜ не начат |  |  |  |  |
-| 53 | Pagination <!-- key:page:237:58 --> | 0 | — | DataGrid, TreeList | ⛔ заблокирован | [ветка](https://www.figma.com/design/DpK8J5xUCl7Gc70DKC4I1K/branch/4mQvbdc71JA6cocp0tfVbT/DevExtreme-UI-Kit--AI-Generated-) | Ekaterina Pochinshchikova | 2026-10-14 | отложен до SelectBox и NumberBox, перенесён в конец списка (2026-10-21) (compact собирается из них). Разобрано: prev/next внутри page-indexes; nav 33×30, без hover; margin пунктов как отступы корня Page Item; page-padding — сокращённая запись; first-child-* перекрыты в теме; info-content #444 |
-| 54 | DataGrid <!-- key:page:521:3859 --> | 4 | CheckBox, Bullet, SelectBox, Button, TextBox, Pagination | TreeList | ⬜ не начат |  |  |  |  |
-| 55 | TreeList <!-- key:page:572:2 --> | 5 | DataGrid, Pagination | — | ⬜ не начат |  |  |  |  |
+| 39 | Toolbar <!-- key:page:2726:30818 --> | 3 | Button, Popup, List | — | ⬜ не начат |  |  | 2026-10-27 | страница пустая — в граф (build) не попадает, пока на ней нет компонентов; строка добавлена вручную. Меню переполнения (locateInMenu): Button overflow + Popup + List |
+| 40 | .TextEditor <!-- key:set:73:2488 --> | 1 | .SpinButtons, .DropDownButton | DateBox, NumberBox, TextBox, Autocomplete, DropDownBox, SelectBox, List | ✅ смёржен | [ветка](https://www.figma.com/design/j2uD3P8hYqeWf0prOE8oXF/fix-texteditor?node-id=2455-22) | Ekaterina Pochinshchikova | 2026-10-26 | fix: search-icon (TextBox), квадрат ColorBox, слот tag-container (TagBox), minHeight; .DropDownButton icon; владельцы без изменений |
+| 41 | TextBox <!-- key:page:73:3034 --> | 2 | .Label, .TextEditor | DataGrid, Lookup, TreeView | ✅ смёржен | [ветка](https://www.figma.com/design/DpK8J5xUCl7Gc70DKC4I1K/branch/I8ki9LF7yC0eipwliM70BA/DevExtreme-UI-Kit--AI-Generated-?node-id=73-3034) | Ekaterina Pochinshchikova | 2026-10-26 | mode=text/search/password поверх exposed .TextEditor; search: иконка, отступ, сдвиг подписи (static по умолчанию); 10 инстансов во владельцах на mode=text |
+| 42 | TextArea <!-- key:page:80:2022 --> | 1 | .Label | — | ✅ смёржен | [ветка](https://www.figma.com/design/DpK8J5xUCl7Gc70DKC4I1K/branch/yknDAGuLiKXp0ydETC8lTI/DevExtreme-UI-Kit--AI-Generated-?node-id=80-2022) | Ekaterina Pochinshchikova | 2026-10-27 | autoResizeEnabled=false/true поверх exposed .TextEditor; margin 2 и line-height через переопределения; высота 2 строки — содержимым; инстанс DataGrid переведён |
+| 43 | NumberBox <!-- key:page:74:3566 --> | 2 | .Label, .TextEditor | — | ⬜ не начат |  |  |  |  |
+| 44 | Autocomplete <!-- key:page:291:2 --> | 2 | .Label, .TextEditor | — | ⬜ не начат |  |  |  |  |
+| 45 | DateBox <!-- key:page:77:4985 --> | 2 | .Label, .TextEditor | — | ⬜ не начат |  |  |  |  |
+| 46 | DateRangeBox <!-- key:page:324:2 --> | 0 | — | — | ⬜ не начат |  |  |  |  |
+| 47 | ColorBox <!-- key:page:82:3343 --> | 1 | .Label, .DropDownButton | — | ⬜ не начат |  |  |  |  |
+| 48 | DropDownBox <!-- key:page:453:26956 --> | 2 | .Label, .TextEditor | — | ⬜ не начат |  |  |  |  |
+| 49 | TagBox <!-- key:page:304:2 --> | 1 | .Label, .Tag, .DropDownButton | — | ⬜ не начат |  |  |  |  |
+| 50 | SelectBox <!-- key:page:76:4443 --> | 3 | .Label, .TextEditor, List | DataGrid, HtmlEditor | ⬜ не начат |  |  |  |  |
+| 51 | Lookup <!-- key:page:276:18844 --> | 3 | TextBox, List, Button | — | ⬜ не начат |  |  |  |  |
+| 52 | HtmlEditor <!-- key:page:424:2 --> | 4 | Button, SelectBox | — | ⬜ не начат |  |  |  |  |
+| 53 | Stepper <!-- key:page:204:4395 --> | 0 | — | — | ⬜ не начат |  |  |  |  |
+| 54 | Pagination <!-- key:page:237:58 --> | 0 | — | DataGrid, TreeList | ⛔ заблокирован | [ветка](https://www.figma.com/design/DpK8J5xUCl7Gc70DKC4I1K/branch/4mQvbdc71JA6cocp0tfVbT/DevExtreme-UI-Kit--AI-Generated-) | Ekaterina Pochinshchikova | 2026-10-14 | отложен до SelectBox и NumberBox, перенесён в конец списка (2026-10-21) (compact собирается из них). Разобрано: prev/next внутри page-indexes; nav 33×30, без hover; margin пунктов как отступы корня Page Item; page-padding — сокращённая запись; first-child-* перекрыты в теме; info-content #444 |
+| 55 | DataGrid <!-- key:page:521:3859 --> | 4 | CheckBox, Bullet, SelectBox, Button, TextBox, Pagination | TreeList | ⬜ не начат |  |  |  |  |
+| 56 | TreeList <!-- key:page:572:2 --> | 5 | DataGrid, Pagination | — | ⬜ не начат |  |  |  |  |
 
 ## Ассеты
 
