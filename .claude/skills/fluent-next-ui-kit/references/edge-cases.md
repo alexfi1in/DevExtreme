@@ -417,3 +417,9 @@
   таких обёрток. Center по центру через равные FILL-секции before / after. `multiline` — ось: один слот
   с переносом вместо секций. Открытое меню переполнения — отдельный компонент `.Toolbar Menu`, в Toolbar
   только кнопка (`showMenu`). `.Popup Title` / `.Popup Bottom` переводятся на Toolbar отдельной задачей.
+- **2026-10-27 — выпадающие окна редакторов = Popup** (`dx-popup-wrapper dx-dropdowneditor-overlay`).
+  Общие подкомпоненты на Subcomponents: `.DropDown Overlay` (exposed Popup без заголовка, отступы Popup,
+  содержимое — слот) и `.DropDownList Popup` (то же, содержимое без отступов, пункты `.List Item` с
+  отступами List). Тень — `box-shadow lg` (`global/dropdown-box-shadow`), не 2xl после фокуса.
+  Открытое окно — отдельный компонент рядом с полем; `flipped` не рисуется. Поле редактора — по образцу
+  NumberBox: exposed `.TextEditor`, без своих осей, если API их не даёт.
