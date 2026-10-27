@@ -674,6 +674,9 @@ const tok = (name) => { const v = byName.get(name); if (!v) throw new Error(`no 
   sublayer») — boolean на необязательные части держи вне слотов.
 - **Hug-фрейм с `maxWidth` + текст FILL**: короткий текст обнимается, длинный переносится по maxWidth —
   так рисуется `max-width` / процентная колонка пузыря. Текст с WIDTH_AND_HEIGHT при этом не переносится.
+- **`resize()` после `primaryAxisSizingMode='AUTO'` снова делает ось FIXED** (NumberBox: корень остался 40
+  в compact). Сначала `resize`, потом режимы HUG; в проверке compact смотри высоту корня, а не только
+  вложенного инстанса.
 - **Пустой HUG-слот во вложенном инстансе держит старую высоту** (Toolbar center 48) — скрой его
   переопределением `visible=false`.
 
