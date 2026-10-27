@@ -407,3 +407,8 @@
   ось `content=items|grouped|empty` × `showSelectAll`: обе меняют отступ сверху у слота (4px есть только у
   плоского списка без Select All). `searchEnabled`, `showNextButton`, `showBorder` — boolean; рамка — абсолютный
   слой поверх (stroke корня boolean не включает) → DEV-HANDOFF.
+- **2026-10-27 — два вида disabled (TreeView): пункт (`items[].disabled`) и весь виджет (`disabled`)
+  рисуются оба, как в коде,** если они выглядят по-разному. У подкомпонента строки — два значения `state`
+  (`disabled`, `treeViewDisabled`), у самого виджета — ось `disabled`, где строки берут `treeViewDisabled`.
+- **2026-10-27 — margin строки (`1px 0`) — padding прозрачной обёртки подкомпонента**, внутри строка с
+  фоном. Схлопывание margin в коде (−1px у корня) → DEV-HANDOFF.
