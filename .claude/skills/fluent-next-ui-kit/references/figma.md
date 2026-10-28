@@ -679,6 +679,11 @@ const tok = (name) => { const v = byName.get(name); if (!v) throw new Error(`no 
   вложенного инстанса.
 - **Пустой HUG-слот во вложенном инстансе держит старую высоту** (Toolbar center 48) — скрой его
   переопределением `visible=false`.
+- **`p.findOne(n => n.name === 'content')` у Popup находит слот скрытого заголовка** (`.Toolbar Label`),
+  а не слот содержимого. Ищи среди прямых детей: `p.children.find(c => c.type === 'SLOT' && c.name === 'content')`.
+- **Массовые правки через `comp.findAll(...)` заходят внутрь вложенных инстансов** и оставляют на их слоях
+  переопределения (ColorView: `layoutSizingVertical` у слоёв NumberBox). Фильтруй узлы, у которых есть
+  предок-INSTANCE; испорченный инстанс проще пересоздать.
 
 ## Превью для сверки с демкой
 
