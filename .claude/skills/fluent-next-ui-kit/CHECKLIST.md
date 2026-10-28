@@ -101,5 +101,5 @@
 | # | Компонент | Ур. | Состоит из | Используется в | Статус | Ветка | Кто | Обновлено | Заметки |
 |---|---|---|---|---|---|---|---|---|---|
 | 1 | Charts (in progress) <!-- key:page:557:1013 --> | — | — | — | ⬜ не начат |  |  |  |  |
-| 2 | Range Selector (in progress) <!-- key:page:404:4359 --> | — | — | — | ⬜ не начат |  |  |  |  |
+| 2 | Range Selector (in progress) <!-- key:page:404:4359 --> | — | — | — | 🟦 в работе | [ветка](https://www.figma.com/design/DpK8J5xUCl7Gc70DKC4I1K/branch/enGsCNFSwmZTTkQcatMQ7y/DevExtreme-UI-Kit--AI-Generated-?node-id=404-4359) | Ekaterina Pochinshchikova | 2026-10-28 |  |
 | 3 | Scheduler (in progress) <!-- key:page:661:1709 --> | — | Button, DropDownButton, Popup | — | ⬜ не начат |  |  |  |  |
