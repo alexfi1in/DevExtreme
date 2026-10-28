@@ -101,5 +101,5 @@
 | # | Компонент | Ур. | Состоит из | Используется в | Статус | Ветка | Кто | Обновлено | Заметки |
 |---|---|---|---|---|---|---|---|---|---|
 | 1 | Charts (in progress) <!-- key:page:557:1013 --> | — | — | — | ⬜ не начат |  |  |  |  |
-| 2 | Range Selector (in progress) <!-- key:page:404:4359 --> | — | — | — | 🟦 в работе | [ветка](https://www.figma.com/design/DpK8J5xUCl7Gc70DKC4I1K/branch/enGsCNFSwmZTTkQcatMQ7y/DevExtreme-UI-Kit--AI-Generated-?node-id=404-4359) | Ekaterina Pochinshchikova | 2026-10-28 |  |
+| 2 | Range Selector (in progress) <!-- key:page:404:4359 --> | — | — | — | 🟨 на ревью | [ветка](https://www.figma.com/design/DpK8J5xUCl7Gc70DKC4I1K/branch/enGsCNFSwmZTTkQcatMQ7y/DevExtreme-UI-Kit--AI-Generated-?node-id=404-4359) | Ekaterina Pochinshchikova | 2026-10-28 | 8 токенов viz/* (primary, danger, bg, border, content-subtler, purple-subtle, font-weight, font-family); RangeSelector (lightweight, без графика): шкала с делениями 17%/5%, подписи, полоса диапазона, два .RangeSelector Slider; .RangeSelector Slider: position×isValid (4), text; старые детали и Rectangle 1 удалены; вариант с графиком — после Chart; фон viz/purple-subtle в коде не рисуется; Utils перегенерировать |
 | 3 | Scheduler (in progress) <!-- key:page:661:1709 --> | — | Button, DropDownButton, Popup | — | ⬜ не начат |  |  |  |  |
