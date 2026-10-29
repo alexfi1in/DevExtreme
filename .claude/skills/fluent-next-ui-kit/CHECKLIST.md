@@ -102,4 +102,4 @@
 | # | Компонент | Ур. | Состоит из | Используется в | Статус | Ветка | Кто | Обновлено | Заметки |
 |---|---|---|---|---|---|---|---|---|---|
 | 1 | Charts (in progress) <!-- key:page:557:1013 --> | — | — | — | ⬜ не начат |  |  |  |  |
-| 2 | Scheduler (in progress) <!-- key:page:661:1709 --> | — | Button, DropDownButton, Popup | — | ⬜ не начат |  |  |  |  |
+| 2 | Scheduler (in progress) <!-- key:page:661:1709 --> | — | Button, DropDownButton, Popup | — | 🟦 в работе | [ветка](https://www.figma.com/design/DpK8J5xUCl7Gc70DKC4I1K/branch/NO4rvuSeNqe5UMhowjgPvA/DevExtreme-UI-Kit--AI-Generated-?node-id=661-1709) | Ekaterina Pochinshchikova | 2026-10-29 |  |
