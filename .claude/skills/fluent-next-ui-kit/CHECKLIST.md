@@ -119,7 +119,7 @@
 | 6 | Tile View <!-- key:todo:tile_view --> | — | — | — | ⬜ не начат |  |  |  | сетка плиток, состояния hover/focused |
 | 7 | Resizable <!-- key:todo:resizable --> | — | — | — | ⬜ не начат |  |  |  | маркеры изменения размера; возможно подкомпонент |
 | 8 | Filter Builder <!-- key:todo:filter_builder --> | — | — | — | ⬜ не начат |  |  |  | дерево условий And/Or: поле, операция, значение, кнопки |
-| 9 | File Manager <!-- key:todo:file_manager --> | — | Toolbar, TreeView, DataGrid, ContextMenu | — | 🟦 в работе | [ветка](https://www.figma.com/design/DpK8J5xUCl7Gc70DKC4I1K/branch/VYCTxxSNlOIuT7wI5QxzQH/DevExtreme-UI-Kit--AI-Generated-?node-id=2955-5153) | Ekaterina Pochinshchikova | 2026-11-02 | + плиточный вид, «хлебные крошки» |
+| 9 | File Manager <!-- key:todo:file_manager --> | — | Toolbar, TreeView, DataGrid, ContextMenu | — | 🟨 на ревью | [ветка](https://www.figma.com/design/DpK8J5xUCl7Gc70DKC4I1K/branch/VYCTxxSNlOIuT7wI5QxzQH/DevExtreme-UI-Kit--AI-Generated-?node-id=2955-5153) | Ekaterina Pochinshchikova | 2026-11-02 | этап 1: 96 токенов file-manager/* (+5 splitter-bar/*); .Splitter Bar, Breadcrumbs (+Item), Dirs Tree Item, Details Row/Header Row, Thumbnails Item, FileManager (itemView×hasSelection), Demo: BindingToHierarchicalStructure. Этап 2: панель прогресса, уведомления, диалоги |
 | 10 | Pivot Grid <!-- key:todo:pivot_grid --> | — | — | — | ⬜ не начат |  |  |  | сводная таблица + Pivot Grid Field Chooser |
 | 11 | Gantt <!-- key:todo:gantt --> | — | TreeList | — | ⬜ не начат |  |  |  | шкала времени, полосы задач, связи, тулбар |
 | 12 | Diagram <!-- key:todo:diagram --> | — | — | — | ⬜ не начат |  |  |  | на сайте в Data Visualization, но это редактор: тулбокс, панель свойств, тулбар — решить, нужен ли |
