@@ -87,6 +87,7 @@
 | 59 | DataGrid <!-- key:page:521:3859 --> | 4 | CheckBox, Bullet, SelectBox, Button, TextBox, Pagination | TreeList | ✅ смёржен | [ветка](https://www.figma.com/design/DpK8J5xUCl7Gc70DKC4I1K/branch/EOWryQ9yUXQm15F6SXF30p/DevExtreme-UI-Kit--AI-Generated-?node-id=521-3859) | Ekaterina Pochinshchikova | 2026-10-29 | этапы 1 и 2 смёржены (2026-10-28, 2026-10-29); не сделано: 15 токенов диалогов/меню/AI, boolean-свойства блоков, форма демо Form Editing числами |
 | 60 | TreeList <!-- key:page:572:2 --> | 5 | DataGrid, Pagination | — | ✅ смёржен | [ветка](https://www.figma.com/design/DpK8J5xUCl7Gc70DKC4I1K/branch/eyiFwAwbaunKANua8nHAN0/DevExtreme-UI-Kit--AI-Generated-?node-id=572-2) | Ekaterina Pochinshchikova | 2026-10-29 | Cell Tree (36 вар.), Row Tree Data (7), TreeList set (showBorders + 4 boolean) и Demo: Overview на токенах grid/tree-list; DOM headers/rowsview/filter-panel/pager; dark/compact проверены. Изменён общий .GridBase Cell Header (indicators = header-line-height → 49). Utils перегенерировать. |
 | 61 | Scheduler <!-- key:page:661:1709 --> | 5 | Button, DropDownButton, Popup | — | ✅ смёржен | [ветка](https://www.figma.com/design/DpK8J5xUCl7Gc70DKC4I1K/branch/NO4rvuSeNqe5UMhowjgPvA/DevExtreme-UI-Kit--AI-Generated-?node-id=661-1709) | Ekaterina Pochinshchikova | 2026-10-29 | Этап 1 (Day/Week/Month) смёржен 2026-10-29: 204 токена, ячейки/строки/Work Space/Header/Scheduler currentView, все 5 демо пересобраны; Timeline/Agenda частично (Group Header, ячейки дат). Не сделано: этапы 2–3 — шапка Timeline в 2 ряда, .Scheduler / Agenda / Appointment, Tooltip, Popup / Edit Form, иконка reduced, полоска текущего времени в ячейках шапки и панели времени |
+| 62 | Card View <!-- key:page:2946:3187 --> | 2 | Toolbar, Button, CheckBox, TextBox, Pagination | — | ⬜ не начат |  |  |  |  |
 
 ## Ассеты
 
@@ -118,8 +119,7 @@
 | 6 | Tile View <!-- key:todo:tile_view --> | — | — | — | ⬜ не начат |  |  |  | сетка плиток, состояния hover/focused |
 | 7 | Resizable <!-- key:todo:resizable --> | — | — | — | ⬜ не начат |  |  |  | маркеры изменения размера; возможно подкомпонент |
 | 8 | Filter Builder <!-- key:todo:filter_builder --> | — | — | — | ⬜ не начат |  |  |  | дерево условий And/Or: поле, операция, значение, кнопки |
-| 9 | Card View <!-- key:todo:card_view --> | — | — | — | ⬜ не начат |  |  |  | карточки, шапка с тулбаром, поиск, сортировка; частично общее с DataGrid |
-| 10 | File Manager <!-- key:todo:file_manager --> | — | Toolbar, TreeView, DataGrid, ContextMenu | — | ⬜ не начат |  |  |  | + плиточный вид, «хлебные крошки» |
-| 11 | Pivot Grid <!-- key:todo:pivot_grid --> | — | — | — | ⬜ не начат |  |  |  | сводная таблица + Pivot Grid Field Chooser |
-| 12 | Gantt <!-- key:todo:gantt --> | — | TreeList | — | ⬜ не начат |  |  |  | шкала времени, полосы задач, связи, тулбар |
-| 13 | Diagram <!-- key:todo:diagram --> | — | — | — | ⬜ не начат |  |  |  | на сайте в Data Visualization, но это редактор: тулбокс, панель свойств, тулбар — решить, нужен ли |
+| 9 | File Manager <!-- key:todo:file_manager --> | — | Toolbar, TreeView, DataGrid, ContextMenu | — | ⬜ не начат |  |  |  | + плиточный вид, «хлебные крошки» |
+| 10 | Pivot Grid <!-- key:todo:pivot_grid --> | — | — | — | ⬜ не начат |  |  |  | сводная таблица + Pivot Grid Field Chooser |
+| 11 | Gantt <!-- key:todo:gantt --> | — | TreeList | — | ⬜ не начат |  |  |  | шкала времени, полосы задач, связи, тулбар |
+| 12 | Diagram <!-- key:todo:diagram --> | — | — | — | ⬜ не начат |  |  |  | на сайте в Data Visualization, но это редактор: тулбокс, панель свойств, тулбар — решить, нужен ли |
