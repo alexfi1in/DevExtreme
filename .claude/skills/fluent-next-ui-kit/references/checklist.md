@@ -7,8 +7,8 @@
 ## Как устроен
 
 - **Строка = компонент = одна Figma-ветка.** Это страница кита (Button, CheckBox, DataGrid…). Наборы со
-  страницы Sub-components (`.TextEditor`, `.Label`, `.SpinButtons`, `.DropDownButton`, `.Tag`, `.Badge`,
-  `.Informer`, `.Separator`) идут отдельными строками: их используют многие редакторы.
+  страницы Sub-components (`TextEditor`, `Label`, `SpinButtons`, `DropDownEditor Button`, `Tag`, `Badge`,
+  `Informer`, `Separator`) идут отдельными строками: их используют многие редакторы.
 - **Готовые сабкомпоненты живут на странице «Subcomponents»** (новая, после «IN PROGRESS»). Берёшь сабкомпонент
   в работу — перенеси его набор со старой страницы «Sub-components» на «Subcomponents» (`page.appendChild(set)`)
   и пересобирай там. Перенос сохраняет связь с инстансами; новый набор с нуля не создавай.
@@ -39,7 +39,7 @@ node $C next                            # что можно брать в раб
 node $C set Button in-progress --branch <ссылка на Figma-ветку>
 node $C set Button review --note "38 токенов, 36 вариантов; аннотации Utils перегенерировать"
 node $C set Button merged
-node $C set Button blocked --note "ждёт мёржа .TextEditor"
+node $C set Button blocked --note "ждёт мёржа TextEditor"
 ```
 
 - **`set` сразу пушит** (тем же механизмом пушатся журналы [registries.md](registries.md)). Скрипт забирает свежую удалённую ветку, меняет одну строку и коммитит поверх неё

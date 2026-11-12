@@ -10,7 +10,7 @@
 //        [--branch <figma branch url>] [--who <name>] [--note <text>] [--force] [--local]
 //
 // <graph.json> is the result of scripts/figma/component-graph.js. <component> is the name in the table
-// (Button, .TextEditor, Tab Panel) - case-insensitive.
+// (Button, TextEditor, Tab Panel) - case-insensitive.
 //
 // Every change is pushed at once - see scripts/lib/publish.mjs for where and how. --local reads and
 // writes the local file only, without git.

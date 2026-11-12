@@ -174,7 +174,7 @@
 
 ### Инстансы внутри мастеров других компонентов
 **Признак:** в аудите, в `instances.insideOtherComponents`, указано, в мастерах каких компонентов лежат инстансы
-(у Button это `.HtmlEditor Toolbar`, `Calendar`, `Popup` и др.). Правка этих инстансов — правка того компонента.
+(у Button это `HtmlEditor Toolbar`, `Calendar`, `Popup` и др.). Правка этих инстансов — правка того компонента.
 У него может быть своя открытая ветка, и тогда при мёрже будет конфликт.
 1. **Рекомендуется:** в своей ветке менять только то, без чего инстансы сломаются (миграция удаляемого
    варианта). Остальное — привязки, сброс переопределений — перечислить для веток тех компонентов. Спросить,
@@ -236,11 +236,11 @@
   «Button».
 - **2026-10-14 — сабкомпоненты делаются на странице «Subcomponents».** Набор переносится туда со старой
   «Sub-components» и пересобирается на месте (см. [checklist.md](checklist.md)).
-- **2026-10-14 — `labelMode=floating` у `.Label` рисует пустое поле** (label внутри поля, крупный). Floating со
-  значением неотличим от static, для него используется `static`. Отдельной оси `empty` у `.Label` нет.
-- **2026-10-19 — у `.TextEditor` заполненность — вариантное свойство `hasValue=false|true`** (класс
+- **2026-10-14 — `labelMode=floating` у `Label` рисует пустое поле** (label внутри поля, крупный). Floating со
+  значением неотличим от static, для него используется `static`. Отдельной оси `empty` у `Label` нет.
+- **2026-10-19 — у `TextEditor` заполненность — вариантное свойство `hasValue=false|true`** (класс
   `dx-texteditor-empty`). Она меняет раскладку: при значении плейсхолдер скрыт, а значение стоит на его месте.
-  Floating-подпись поднимается на рамку, как в focused, и берёт `.Label` `labelMode=static`. Boolean так не
+  Floating-подпись поднимается на рамку, как в focused, и берёт `Label` `labelMode=static`. Boolean так не
   умеет: слои показывались рядом, а подпись оставалась внутри. Вариантов 240. `hasPlaceholder` действует только
   при `hasValue=false`.
 - **2026-10-21 — размер в `em` без токена** (подписи Slider `0.85em` → 11.9 / 10.2) → токен кита размера
@@ -257,7 +257,7 @@
 - **2026-10-26 — все режимы API, которые меняют вид, рисуются** (FileUploader: `uploadMode=useForm`,
   `isValid=false`). «Не рисуем» — только для RTL и анимации; режим, похожий на другой, всё равно отдельное
   значение оси, если в DOM есть отличия.
-- **2026-10-26 — валидация редактора = ось `validationStatus` + общий `.Validation Message`** (токены
+- **2026-10-26 — валидация редактора = ось `validationStatus` + общий `Validation Message`** (токены
   `validation/*`, страница Subcomponents) под корнем. Компоненты, собранные раньше с одной красной рамкой
   (Calendar), нужно дополнить сообщением.
 - **2026-10-26 — `validationMessageMode: auto`** (сообщение видно только в фокусе; у Calendar и большинства
@@ -265,7 +265,7 @@
   focused. У `always` (FileUploader) — сообщение всегда в invalid. Если у корня фиксированная высота
   (Calendar), стили корня переносятся во вложенный фрейм с именем виджета, корень — обёртка HUG.
 - **2026-10-26 — значение API, которое отличается одним показанным слоем, — boolean, а не значение оси**
-  (`.TextEditor`: `validationStatus: pending` → `isPending` у вариантов valid; иначе +120 вариантов). Слой
+  (`TextEditor`: `validationStatus: pending` → `isPending` у вариантов valid; иначе +120 вариантов). Слой
   ставится так, чтобы его ширина сама сужала поле, как padding в коде → DEV-HANDOFF.
 - **2026-10-26 — сетку вариантов не раздувать.** Прежде чем добавлять значение оси, посчитай итог и предложи
   способ без новых вариантов (boolean, слой в существующих вариантах).
@@ -273,10 +273,10 @@
   пустой HUG-фрейм не схлопывается до 0, а якорь 0.01 даёт дробные размеры. Дети встают в родителя.
 - **2026-10-26 — базовый компонент закладывает всё, что владельцы встраивают в его разметку** (по коду:
   `prependTo` / `appendTo` / `addClass` в его контейнеры). Перед сборкой или перепроверкой базового компонента
-  пройди код и живой DOM **всех** владельцев. Для `.TextEditor` это `search-icon` (TextBox), квадрат цвета
+  пройди код и живой DOM **всех** владельцев. Для `TextEditor` это `search-icon` (TextBox), квадрат цвета
   (ColorBox), слот `tag-container` (TagBox) и минимальная высота поля (TagBox, TextArea). Слои скрыты и без
   свойств: владелец включает их переопределением. Своя разметка — у Lookup и DateRangeBox; тулбар Chat
-  лежит в корне TextArea, а не в `.TextEditor`.
+  лежит в корне TextArea, а не в `TextEditor`.
 - **2026-10-26 — размеры в ките целые.** Дробные значения из `calc(… / 2)`, `em` и браузерных высот
   (FileUploader: 3.5, 7.5, 35.5) в токенах кита округляются до целого px; итоговые размеры компонента не
   должны иметь дробей. Каждое округление → HARDCODED (значение в коде и в ките), расхождение с демо →
@@ -285,8 +285,8 @@
   компонента = сумма (HUG). **Исключение — ширины колонок** (Calendar: 270 / 7): остаются FILL и дробными,
   чтобы boolean-колонка (`showWeekNumbers`) работала и внешняя ширина совпадала с кодом → HARDCODED.
 - **2026-10-26 — `50%` / `999em` у радиуса** → `border-radius/full` → DEV-HANDOFF.
-- **2026-10-26 — Calendar: подкомпоненты только для повторяющихся ячеек** (`.Calendar Cell`,
-  `.Calendar Period Cell`, `.Calendar Week Number Cell`). Navigator, заголовок дней и футер — слои
+- **2026-10-26 — Calendar: подкомпоненты только для повторяющихся ячеек** (`Calendar Cell`,
+  `Calendar Period Cell`, `Calendar Week Number Cell`). Navigator, заголовок дней и футер — слои
   корня. `selectionMode` — не ось: выбор показывают состояния ячеек; `viewsCount: 2` и пунктир
   range-hover не рисуются.
 - **2026-10-21 — видимость + положение подписей (`label.visible`, `label.position`)** — одна ось
@@ -297,12 +297,12 @@
   Запись в DEV-HANDOFF.
 - **2026-10-21 — размер из опции API, а не из темы** (толщина Splitter = `separatorSize`, 8): остаётся размером
   компонента, но всё равно записывается в HARDCODED с именем опции, чтобы было видно, откуда число.
-- **2026-10-21 — ручка Slider и RangeSlider — общий подкомпонент `.Slider Handle`** (как в коде один
+- **2026-10-21 — ручка Slider и RangeSlider — общий подкомпонент `Slider Handle`** (как в коде один
   `.dx-slider-handle`): `state=rest|hovered|focused|disabled` × `validationStatus`. В RangeSlider две выведенные
   наружу ручки, у каждой своё состояние. У самих наборов в `state` остаются только `rest` и `disabled`.
   У Slider `hovered`/`focused` остаются вариантами набора, ручка берёт соответствующий вариант.
-- **2026-10-21 — тултип ручки Slider/RangeSlider** — подкомпонент `.Slider Tooltip` (стрелка 14×9, сверху отступ
-  `slider/tooltip-top-padding-block-start`) в `.Slider Handle` по оси `tooltip=hidden|top|bottom`. Ручка в Slider и
+- **2026-10-21 — тултип ручки Slider/RangeSlider** — подкомпонент `Slider Tooltip` (стрелка 14×9, сверху отступ
+  `slider/tooltip-top-padding-block-start`) в `Slider Handle` по оси `tooltip=hidden|top|bottom`. Ручка в Slider и
   RangeSlider выведена наружу, тултип включается на ней.
 - **2026-10-19 — унаследованный unitless line-height без токена** (подпись заголовка Popup: 1.4286 × 20 =
   28.57) → токен кита `<префикс>/…-line-height`. Default — ступень Foundation по округлённому значению (28 →
@@ -312,7 +312,7 @@
   переиспользуют.
 - **2026-10-19 — Popover во Fluent Next без видимой стрелки** (фона у `.dx-popover-arrow::after` нет, он есть
   только у Tooltip и Lookup). Стрелка и ось `position` убраны, Popover — один компонент на основе
-  `.Popup Title` / `.Popup Bottom` и стиля окна Popup → DEV-HANDOFF. Tooltip и Lookup рисуют стрелку сами.
+  `Popup Title` / `Popup Bottom` и стиля окна Popup → DEV-HANDOFF. Tooltip и Lookup рисуют стрелку сами.
 - **2026-10-19 — `shading` у Popup: по умолчанию `false`**, хотя в API `true`. Иначе главный вариант —
   затемнённая рамка. Затемнение — общий `backdrop/bg`, а `popup/dialog-backdrop` относится только к Dialog.
 - **2026-10-19 — токен «unread», потому что правило читает SCSS-переменную** с тем же значением
@@ -334,19 +334,19 @@
   индикатора у корня 1px рамки, в фокусе цветной), а не boolean.
 - **2026-10-19 — окно в рамке outlined под подписью закрывает полоска `label-box › label-backdrop`.** Её высота —
   `text-editor/label-backdrop-height` (3px), заливка — `text-editor/outlined-bg`, ширина — подпись. Заливку у
-  `.Label` внутри `.TextEditor` не ставить. В коде это разрыв `border-top` без фона, поэтому полоска видна только
+  `Label` внутри `TextEditor` не ставить. В коде это разрыв `border-top` без фона, поэтому полоска видна только
   на цветной поверхности (→ DEV-HANDOFF).
 - **2026-10-19 — отступ сверху у outlined static/floating** — токен кита
   `text-editor/with-label-margin-block-start` (`spacing/80`/`spacing/60`; в коде 7.5/6.5 без CSS-переменной) на
   корне. Поле и абсолютная подпись лежат во фрейме `field`, чтобы подпись шла за полем в обоих размерах. Так же
   делать в составных редакторах (DateRangeBox).
-- **2026-10-14 — токены `text-editor/*`, нужные `.Label`, создаются в ветке `.Label`.** Ветку `.TextEditor`
+- **2026-10-14 — токены `text-editor/*`, нужные `Label`, создаются в ветке `Label`.** Ветку `TextEditor`
   открывают после её мёржа.
 - **2026-10-14 — отступ контейнера, нарисованный внутри сабкомпонента, временно остаётся там.**
-  `text-editor/spin-button-margin-inline-end` (6/4) задан у `.DropDownButton` как `paddingRight`, хотя в DOM это
-  margin контейнера кнопок `.TextEditor`. **При сборке `.TextEditor` перенести отступ на контейнер и убрать из
-  кнопки** — напоминание в заметке `.TextEditor` в чек-листе и в DEV-HANDOFF.
-- **2026-10-14 — состояние «список открыт» = нажатая кнопка.** У `.DropDownButton` один `state=active` для
+  `text-editor/spin-button-margin-inline-end` (6/4) задан у `DropDownEditor Button` как `paddingRight`, хотя в DOM это
+  margin контейнера кнопок `TextEditor`. **При сборке `TextEditor` перенести отступ на контейнер и убрать из
+  кнопки** — напоминание в заметке `TextEditor` в чек-листе и в DEV-HANDOFF.
+- **2026-10-14 — состояние «список открыт» = нажатая кнопка.** У `DropDownEditor Button` один `state=active` для
   `dx-state-active` и `dx-dropdowneditor-active`: вид одинаковый (глиф `spinup`, цвет `icon-active`).
 - **2026-10-14 — переменные Foundation берём из алиасов уже существующих токенов**, если они там есть: это
   быстрее и надёжнее импорта из библиотеки (см. [figma.md](figma.md)).
@@ -359,7 +359,7 @@
   дважды и специальный токен перекрыт общим (RadioGroup: `collection-horizontal-column-gap` 17 перекрыт
   `collection-column-gap` 16), поле в ките привязывается к специальному токену, хотя демка показывает общий.
   Расхождение с демкой и предложение убрать лишнее объявление → DEV-HANDOFF.
-- **2026-10-14 — общий сабкомпонент кита без своего компонента в теме (`.Separator`)** делится вариантом
+- **2026-10-14 — общий сабкомпонент кита без своего компонента в теме (`Separator`)** делится вариантом
   `context` по местам использования, и каждое место привязано к токенам своего компонента: `context-menu` —
   `menu/separator-bg(-disabled)`, `context-menu/separator-height`, `context-menu/separator-margin`;
   `list-select-all` — `list/base-select-all-separator-bg`, `list/select-all-height`. Эти токены создаются в ветке
@@ -389,21 +389,21 @@
 - **2026-10-15 — токен со значением 0 создаём и привязываем** (Accordion `item-opened-margin: 0`). Если тема
   публикует токен, он появляется в ките с алиасом `spacing/0` (`border-width/0`, …) и привязывается к полю, на
   которое он влияет, даже когда значение нулевое. Так при смене значения в теме кит не разойдётся с кодом.
-- **2026-10-15 — иконки внутри поля рисуем как кнопки из опции `buttons`** (`.TextEditor`). В коде у text editor
+- **2026-10-15 — иконки внутри поля рисуем как кнопки из опции `buttons`** (`TextEditor`). В коде у text editor
   нет «ведущей» и «замыкающей» иконки, есть свои кнопки `buttons` (Button в режиме text) до и после поля, с
   отступом `custom-button-margin`. В ките это `hasBeforeButton` / `hasAfterButton` с exposed-инстансом Button.
-- **2026-10-15 — `.Label` в `.TextEditor` не встраиваем, пока не собраны владельцы.** Подпись ставит владелец
+- **2026-10-15 — `Label` в `TextEditor` не встраиваем, пока не собраны владельцы.** Подпись ставит владелец
   (TextBox, DateBox, …), как и раньше. Встроить её с осью `labelMode` — отдельная задача при сборке владельцев.
-- **2026-10-15 — `labelMode` в `.TextEditor`.** Ось `labelMode=hidden|static|floating|outside`, по умолчанию
-  `hidden` (у владельцев своя подпись, пока их не пересобрали). Подпись — вложенный exposed-инстанс `.Label`, его
+- **2026-10-15 — `labelMode` в `TextEditor`.** Ось `labelMode=hidden|static|floating|outside`, по умолчанию
+  `hidden` (у владельцев своя подпись, пока их не пересобрали). Подпись — вложенный exposed-инстанс `Label`, его
   `labelMode`, `stylingMode`, `state` и `validationStatus` задаёт вариант. `floating` в ките — подпись на месте
   placeholder; в `focused` она наверху, как в коде. «floating со значением» выглядит как `static`, для него берут
   `static`. Корень варианта — прозрачная вертикальная обёртка: в ней `label-outside` (в потоке) для outside и
   поле `texteditor`; подписи static/floating — абсолютный контейнер `label` с отступом слева на токене поля.
-  У outlined «окно» в рамке закрывается фоном `text-editor/outlined-bg` у `.Label`.
-- **2026-10-27 — коллекция с группами (List).** Подкомпоненты `.List Item`, `.List Group Header`
-  (`expanded` + boolean `collapsible` на индикаторе), `.List Group` (заголовок + слот `items` + нижняя граница
-  на boolean `showSeparator`: у последней группы её нет), `.List Select All`, `.List Context Menu`. У `List`
+  У outlined «окно» в рамке закрывается фоном `text-editor/outlined-bg` у `Label`.
+- **2026-10-27 — коллекция с группами (List).** Подкомпоненты `List Item`, `List Group Header`
+  (`expanded` + boolean `collapsible` на индикаторе), `List Group` (заголовок + слот `items` + нижняя граница
+  на boolean `showSeparator`: у последней группы её нет), `List Select All`, `List Context Menu`. У `List`
   ось `content=items|grouped|empty` × `showSelectAll`: обе меняют отступ сверху у слота (4px есть только у
   плоского списка без Select All). `searchEnabled`, `showNextButton`, `showBorder` — boolean; рамка — абсолютный
   слой поверх (stroke корня boolean не включает) → DEV-HANDOFF.
@@ -413,23 +413,23 @@
 - **2026-10-27 — margin строки (`1px 0`) — padding прозрачной обёртки подкомпонента**, внутри строка с
   фоном. Схлопывание margin в коде (−1px у корня) → DEV-HANDOFF.
 - **2026-10-27 — контейнер с произвольными виджетами (Toolbar).** Элемент — подкомпонент-обёртка
-  `.Toolbar Item` (высота `toolbar/height`, слот `content`), секции before / center / after — слоты из
+  `Toolbar Item` (высота `toolbar/height`, слот `content`), секции before / center / after — слоты из
   таких обёрток. Center по центру через равные FILL-секции before / after. `multiline` — ось: один слот
-  с переносом вместо секций. Открытое меню переполнения — отдельный компонент `.Toolbar Menu`, в Toolbar
-  только кнопка (`showMenu`). `.Popup Title` / `.Popup Bottom` переводятся на Toolbar отдельной задачей.
+  с переносом вместо секций. Открытое меню переполнения — отдельный компонент `Toolbar Menu`, в Toolbar
+  только кнопка (`showMenu`). `Popup Title` / `Popup Bottom` переводятся на Toolbar отдельной задачей.
 - **2026-10-27 — выпадающие окна редакторов = Popup** (`dx-popup-wrapper dx-dropdowneditor-overlay`).
-  Общие подкомпоненты на Subcomponents: `.DropDown Overlay` (exposed Popup без заголовка, отступы Popup,
-  содержимое — слот) и `.DropDownList Popup` (то же, содержимое без отступов, пункты `.List Item` с
+  Общие подкомпоненты на Subcomponents: `DropDown Overlay` (exposed Popup без заголовка, отступы Popup,
+  содержимое — слот) и `DropDownList Popup` (то же, содержимое без отступов, пункты `List Item` с
   отступами List). Тень — `box-shadow lg` (`global/dropdown-box-shadow`), не 2xl после фокуса.
   Открытое окно — отдельный компонент рядом с полем; `flipped` не рисуется. Поле редактора — по образцу
-  NumberBox: exposed `.TextEditor`, без своих осей, если API их не даёт.
+  NumberBox: exposed `TextEditor`, без своих осей, если API их не даёт.
 - **2026-10-27 — где лежит подкомпонент.** Используется напрямую (в мастере, не через вложенный инстанс)
   только одним компонентом — на странице этого компонента; несколькими — на Subcomponents. Части общего
-  подкомпонента (`.SpinButtons` в `.TextEditor`, `.Slider Tooltip` в `.Slider Handle`) лежат рядом с ним.
-  Подкомпоненты, задуманные как общие (`.DropDown Overlay`, `.DropDownList Popup`), остаются на Subcomponents,
+  подкомпонента (`SpinButtons` в `TextEditor`, `Slider Tooltip` в `Slider Handle`) лежат рядом с ним.
+  Подкомпоненты, задуманные как общие (`DropDown Overlay`, `DropDownList Popup`), остаются на Subcomponents,
   даже пока у них один пользователь. Переносится вместе с группой Utils.
-- **2026-10-28 — имена компонентов без `/`.** Подкомпонент — точка в начале и пробелы: `.Accordion Item`,
-  `.ContextMenu Item`, `.GridBase Cell Data`; собранный виджет — просто имя виджета (`DataGrid`, а не
+- **2026-10-28 — имена компонентов без `/`.** Подкомпонент — точка в начале и пробелы: `Accordion Item`,
+  `ContextMenu Item`, `GridBase Cell Data`; собранный виджет — просто имя виджета (`DataGrid`, а не
   `DataGrid / Assembled`). Косая черта делает в Assets папки и прячет подкомпонент как отдельный компонент.
   Группа подписей — `<имя> - Utils`, переименовывается вместе с компонентом. Черновые страницы (in progress)
   не трогаем.
