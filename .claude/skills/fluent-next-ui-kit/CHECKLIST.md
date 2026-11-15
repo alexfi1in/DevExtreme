@@ -95,7 +95,7 @@
 
 | # | Компонент | Ур. | Состоит из | Используется в | Статус | Ветка | Кто | Обновлено | Заметки |
 |---|---|---|---|---|---|---|---|---|---|
-| 1 | Icons <!-- key:page:77:6511 --> | — | — | — | ⬜ не начат |  |  |  |  |
+| 1 | Icons <!-- key:page:77:6511 --> | — | — | — | ✅ смёржен | [ветка](https://www.figma.com/design/DpK8J5xUCl7Gc70DKC4I1K/branch/S2sZR54MwhTn89bl4wvvku/DevExtreme-UI-Kit--AI-Generated-?node-id=3063-824) | Ekaterina Pochinshchikova | 2026-11-15 | новый набор Icons: 316 компонентов по алфавиту (суффиксы копий Figma « 1»/« 2» убраны); все 9526 инстансов старых иконок подменены (311 пар, дефисы/подчёркивания убраны: add-header→addheader и т.п.; doc-1→doc1, zoominoutline→zoominoutlined), привязки цвета сохранены, у event/columnchooser/export допривязаны лишние векторы; preferredValues ChatFileCard обновлены; Icons - OLD удалена. Новые, пока не используются: chatdismiss, clearhistory, gridkanban, listbartreeoffset, wrench |
 
 ## Черновые страницы
 
