@@ -103,7 +103,7 @@
 
 | # | Компонент | Ур. | Состоит из | Используется в | Статус | Ветка | Кто | Обновлено | Заметки |
 |---|---|---|---|---|---|---|---|---|---|
-| 1 | Charts (in progress) <!-- key:page:557:1013 --> | — | — | — | 🟦 в работе | [ветка](https://www.figma.com/design/vnRSC9OKV0uaU7hJz8AUaQ/Charts?node-id=882-1839) | Ekaterina Pochinshchikova | 2026-11-16 | по одному чарту каждого типа по живым демкам Fluent Next; сабкомпоненты Title/Export/Legend/Tooltip |
+| 1 | Charts (in progress) <!-- key:page:557:1013 --> | — | — | — | ✅ смёржен | [ветка](https://www.figma.com/design/vnRSC9OKV0uaU7hJz8AUaQ/Charts?node-id=882-1839) | Ekaterina Pochinshchikova | 2026-11-16 | смёржен: 36 токенов viz/* (26 новых); сабкомпоненты Chart Title (+subtitle), Export Button (4 состояния), Legend Item, Legend (слот), Tooltip; по одному чарту на тип по живым демкам Fluent Next: Area, Standard Bar, Doughnut, Simple Bullets, Simple Sparklines, Stock, Funnel, Line, Pie, Scatter, Continuous Data (polar), Range Bar, Sankey, Tree Map, Pareto; Bullet перестроен на дорожки (value/target/zero-level в инстансе), буллеты DataGrid Overview по демке. Не сделано: гейджи (отдельная ветка); палитры демок и размеры шрифтов — в HARDCODED; viz/blue, viz/gray (Foundation) расходятся с CSS |
 
 ## К уточнению
 
