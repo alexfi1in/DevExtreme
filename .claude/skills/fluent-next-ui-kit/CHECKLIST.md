@@ -103,7 +103,7 @@
 
 | # | Компонент | Ур. | Состоит из | Используется в | Статус | Ветка | Кто | Обновлено | Заметки |
 |---|---|---|---|---|---|---|---|---|---|
-| 1 | Charts (in progress) <!-- key:page:557:1013 --> | — | — | — | ⬜ не начат |  |  |  |  |
+| 1 | Charts (in progress) <!-- key:page:557:1013 --> | — | — | — | 🟦 в работе | [ветка](https://www.figma.com/design/vnRSC9OKV0uaU7hJz8AUaQ/Charts?node-id=882-1839) | Ekaterina Pochinshchikova | 2026-11-16 | по одному чарту каждого типа по живым демкам Fluent Next; сабкомпоненты Title/Export/Legend/Tooltip |
 
 ## К уточнению
 
