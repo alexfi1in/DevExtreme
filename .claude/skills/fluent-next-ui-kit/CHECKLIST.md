@@ -111,7 +111,7 @@
 
 | # | Компонент | Ур. | Состоит из | Используется в | Статус | Ветка | Кто | Обновлено | Заметки |
 |---|---|---|---|---|---|---|---|---|---|
-| 1 | Form <!-- key:todo:form --> | — | — | — | ⬜ не начат |  |  |  | подписи, группы с заголовками, вкладки внутри формы, звёздочка обязательного поля, подсказки |
+| 1 | Form <!-- key:todo:form --> | — | — | — | 🟦 в работе | [ветка](https://www.figma.com/design/DpK8J5xUCl7Gc70DKC4I1K/branch/hfV7YYy5wFxe0FECsJWBnz/DevExtreme-UI-Kit--AI-Generated-) | Ekaterina Pochinshchikova | 2026-11-23 | подписи, группы с заголовками, вкладки внутри формы, звёздочка обязательного поля, подсказки |
 | 2 | Field Set <!-- key:todo:field_set --> | — | — | — | ⬜ не начат |  |  |  | группа полей с заголовком (в демке — часть формы) |
 | 3 | Validation Summary <!-- key:todo:validation_summary --> | — | — | — | ⬜ не начат |  |  |  | список ошибок валидации; Validation Message у полей уже есть |
 | 4 | Scroll View <!-- key:todo:scroll_view --> | — | — | — | ⬜ не начат |  |  |  | скроллбар, pull-to-refresh, «загрузить ещё» |
